@@ -1,0 +1,14 @@
+[32m[2024-09-04 09:46:03] INFO [Recovery] 2024/09/04 - 09:46:03 panic recovered:
+Get "https://192.168.227.161:6443/api/v1/nodes": net/http: TLS handshake timeout
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1975529)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1974ffb)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x14e0c16)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x14aefb4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xf9ece0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

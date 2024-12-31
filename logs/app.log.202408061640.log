@@ -1,0 +1,8 @@
+[31m[2024-08-06 16:41:30] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-08-06 16:41:30] INFO 
+[0m[31m[2024-08-06 16:42:08] ERROR Failed to read kkconf info: invalid character '^' in string escape code
+[0m[31m[2024-08-06 16:42:08] ERROR Failed to create SSH connection: dial tcp :0: connectex: The requested address is not valid in its context.
+[0m[32m[2024-08-06 16:42:08] INFO 
+[0m[31m[2024-08-06 16:42:51] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-08-06 16:42:51] INFO 
+[0m

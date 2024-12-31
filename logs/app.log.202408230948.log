@@ -1,0 +1,2 @@
+[31m[2024-08-23 09:56:22] ERROR Error getting token: Post "https://keycloak.kmpp.io/auth/realms/cars/protocol/openid-connect/token": context deadline exceeded
+[0m

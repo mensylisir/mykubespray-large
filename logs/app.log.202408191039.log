@@ -1,0 +1,33 @@
+[31m[2024-08-19 10:39:59] ERROR Read /etc/kubernetes/manifests/kube-apiserver.yaml failed
+[0m[31m[2024-08-19 10:39:59] ERROR Failed to configure apiserver node1: open /etc/kubernetes/manifests/kube-apiserver.yaml: The system cannot find the path specified.
+[0m[31m[2024-08-19 10:40:04] ERROR Configure apiserver failed: open /etc/kubernetes/manifests/kube-apiserver.yaml: The system cannot find the path specified.
+[0m[32m[2024-08-19 10:40:04] INFO [Recovery] 2024/08/19 - 10:40:04 panic recovered:
+open /etc/kubernetes/manifests/kube-apiserver.yaml: The system cannot find the path specified.
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/errorx/errorx.go:40 (0x1168918)
+	Dangerous: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/ginx/errorx.go:10 (0x118c5db)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/controller/apiserver.go:38 (0x11b9945)
+	ConfigureApiServer: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1148b9c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/logrus.go:62 (0x11a68ba)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1148b9c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/recovery.go:94 (0x11a4aee)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1148b9c)
+	(*Context).Next: c.index++
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1158c53)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1158724)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:2936 (0xc9e333)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:1995 (0xc97cf4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1598 (0x85f5a0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

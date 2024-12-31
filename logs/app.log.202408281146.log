@@ -1,0 +1,36 @@
+[31m[2024-08-28 13:35:45] ERROR Failed to execute command: Process exited with status 2, bash: -c:行1: 未预期的符号“(”附近有语法错误
+bash: -c:行1: `lvextend -l +100\%!F(string=uos)REE /dev/mapper/root-%!s(MISSING)'
+
+[0m[31m[2024-08-28 13:35:45] ERROR lvextend failed: Process exited with status 2,
+[0m[31m[2024-08-28 13:35:45] ERROR Failed to extend lv: Process exited with status 2
+[0m[31m[2024-08-28 13:35:45] ERROR Mount disk failed: Process exited with status 2
+[0m[32m[2024-08-28 13:35:45] INFO [Recovery] 2024/08/28 - 13:35:45 panic recovered:
+Process exited with status 2
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/errorx/errorx.go:40 (0x1d95d69)
+	Dangerous: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/ginx/errorx.go:10 (0x1db9130)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/controller/os.go:38 (0x1dedb2d)
+	MountDisk: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1d769b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/logrus.go:62 (0x1dd3465)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1d769b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/recovery.go:94 (0x1dd16b8)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1d769b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1d86689)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1d8615b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1321a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x12f0094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xdfebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

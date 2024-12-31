@@ -1,0 +1,106 @@
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+kubernetesVersion: "v1.28.0"  # Kubernetes 版本
+controlPlaneEndpoint: "<load-balancer-ip>:6443"  # 如果有高可用负载均衡器
+networking:
+  podSubnet: "192.168.0.0/16"
+  serviceSubnet: "10.96.0.0/12"
+apiServer:
+  extraArgs:
+    # 1. 启用安全的审计日志功能
+    audit-log-path: "/var/log/kubernetes/audit.log"           # 审计日志路径
+    audit-log-maxage: "30"                                    # 保留的最大天数
+    audit-log-maxbackup: "10"                                 # 保留的最大备份数
+    audit-log-maxsize: "100"                                  # 日志文件大小上限 (MB)
+    audit-policy-file: "/etc/kubernetes/audit-policy.yaml"    # 审计策略文件路径
+    # 2. 启用 RBAC (Role-Based Access Control)
+    authorization-mode: "Node,RBAC"
+    # 3. 启用安全端点
+    enable-admission-plugins: "NodeRestriction,PodSecurityPolicy,ServiceAccount"  # 推荐的 Admission 控制器
+    # 4. 禁止匿名访问 API Server
+    anonymous-auth: "false"
+    # 5. 启用加密通信
+    tls-cert-file: "/etc/kubernetes/pki/apiserver.crt"
+    tls-private-key-file: "/etc/kubernetes/pki/apiserver.key"
+    # 6. 使用安全的传输层安全机制
+    kubelet-certificate-authority: "/etc/kubernetes/pki/ca.crt"
+    kubelet-client-certificate: "/etc/kubernetes/pki/apiserver-kubelet-client.crt"
+    kubelet-client-key: "/etc/kubernetes/pki/apiserver-kubelet-client.key"
+    # 7. 不允许未经身份验证的用户在 API 服务器上执行请求
+    insecure-bind-address: "127.0.0.1"
+    insecure-port: "0"
+    # 8. 禁止启用不安全端口
+    profiling: "false"   # 禁用 profiling，符合 CIS 基线要求
+  extraVolumes:
+    - name: audit-policy
+      hostPath: /etc/kubernetes/audit-policy.yaml
+      mountPath: /etc/kubernetes/audit-policy.yaml
+      readOnly: true
+      pathType: File
+
+controllerManager:
+  extraArgs:
+    # 1. 启用安全端口，仅监听 localhost
+    bind-address: "127.0.0.1"
+    # 2. 使用安全传输
+    tls-cert-file: "/etc/kubernetes/pki/controller-manager.crt"
+    tls-private-key-file: "/etc/kubernetes/pki/controller-manager.key"
+    # 3. 启用安全的控制器操作
+    secure-port: "10257"
+    # 4. 禁止启用未经身份验证的健康检查端点
+    port: "0"
+    profiling: "false"   # 禁用 profiling，符合 CIS 基线要求
+  extraVolumes:
+    - name: kube-controller-manager-kubeconfig
+      hostPath: /etc/kubernetes/controller-manager.conf
+      mountPath: /etc/kubernetes/controller-manager.conf
+      readOnly: true
+
+scheduler:
+  extraArgs:
+    # 1. 启用安全端口，仅监听 localhost
+    bind-address: "127.0.0.1"
+    # 2. 使用安全传输
+    tls-cert-file: "/etc/kubernetes/pki/scheduler.crt"
+    tls-private-key-file: "/etc/kubernetes/pki/scheduler.key"
+    # 3. 启用安全的调度器操作
+    secure-port: "10259"
+    # 4. 禁止启用未经身份验证的健康检查端点
+    port: "0"
+    profiling: "false"   # 禁用 profiling，符合 CIS 基线要求
+
+etcd:
+  local:
+    extraArgs:
+      # 1. 启用加密通信
+      cert-file: "/etc/kubernetes/pki/etcd/server.crt"
+      key-file: "/etc/kubernetes/pki/etcd/server.key"
+      peer-cert-file: "/etc/kubernetes/pki/etcd/peer.crt"
+      peer-key-file: "/etc/kubernetes/pki/etcd/peer.key"
+      trusted-ca-file: "/etc/kubernetes/pki/etcd/ca.crt"
+      peer-trusted-ca-file: "/etc/kubernetes/pki/etcd/ca.crt"
+      # 2. 仅监听 localhost
+      listen-metrics-urls: "https://127.0.0.1:2381"
+      listen-client-urls: "https://127.0.0.1:2379"
+      listen-peer-urls: "https://127.0.0.1:2380"
+      # 3. 启用认证
+      client-cert-auth: "true"
+      peer-client-cert-auth: "true"
+
+# 全局加密设置 - 使用 Kubernetes 提供的 Secret 加密机制
+apiServer:
+  extraArgs:
+    encryption-provider-config: "/etc/kubernetes/encryption-config.yaml"
+
+---
+apiVersion: apiserver.config.k8s.io/v1
+kind: EncryptionConfiguration
+resources:
+  - resources:
+      - secrets
+    providers:
+      - aescbc:
+          keys:
+            - name: key1
+              secret: c2VjcmV0S2V5MTIzNDU=  # base64 编码后的 32 字节密钥
+      - identity: {}

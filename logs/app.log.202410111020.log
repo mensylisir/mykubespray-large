@@ -1,0 +1,11 @@
+[31m[2024-10-11 10:20:25] ERROR Failed to generate dir \home\wangzhendong\cluster1\wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 10:20:25] INFO error: Unable to open the given cluster configuration file: open /home/wangzhendong/homewangzhendongcluster1wangclusterconfig-sample.yaml: no such file or directory
+
+[0m[31m[2024-10-11 10:20:25] ERROR SSH command execution failed: Process exited with status 1
+[0m[31m[2024-10-11 10:20:25] ERROR Pipeline Done
+
+[0m[31m[2024-10-11 10:20:25] ERROR Failed to delete cluster wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 10:20:25] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 4.6914033s | IP: 127.0.0.1
+
+[0m[32m[2024-10-11 10:20:25] INFO {{0 2024-10-11 10:20:20.8559842 +0800 CST m=+4.420628701 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728613225 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

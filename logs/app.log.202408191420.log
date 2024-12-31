@@ -1,0 +1,1188 @@
+[32m[2024-08-19 14:21:11] INFO 
+
+[0m[32m[2024-08-19 14:21:11] INFO 
+
+[0m[31m[2024-08-19 14:21:11] ERROR 14:20:56 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-08-19 14:21:11] INFO  _   __      _          _   __           
+
+[0m[32m[2024-08-19 14:21:11] INFO | | / /     | |        | | / /           
+
+[0m[32m[2024-08-19 14:21:11] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-08-19 14:21:11] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-08-19 14:21:11] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-08-19 14:21:11] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-08-19 14:21:11] INFO                                     __/ |
+
+[0m[32m[2024-08-19 14:21:11] INFO                                    |___/
+
+[0m[32m[2024-08-19 14:21:11] INFO 
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:56 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:12] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:12] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST message: [registry]
+
+[0m[31m[2024-08-19 14:21:12] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:12] ERROR 14:20:57 CST [NodePreCheckModule] A pre-check on nodes
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST success: [node1]
+
+[0m[32m[2024-08-19 14:21:15] INFO +----------+------+------+---------+----------+-------+-------+---------+-----------+--------+---------+------------+------------+-------------+------------------+--------------+
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST success: [registry]
+
+[0m[32m[2024-08-19 14:21:15] INFO | name     | sudo | curl | openssl | ebtables | socat | ipset | ipvsadm | conntrack | chrony | docker  | containerd | nfs client | ceph client | glusterfs client | time         |
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST [ConfirmModule] Display confirmation form
+
+[0m[32m[2024-08-19 14:21:15] INFO +----------+------+------+---------+----------+-------+-------+---------+-----------+--------+---------+------------+------------+-------------+------------------+--------------+
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST success: [LocalHost]
+
+[0m[32m[2024-08-19 14:21:15] INFO | node1    | y    | y    | y       | y        | y     | y     | y       | y         | y      |         | v1.6.4     | y          |             |                  | CST 14:21:00 |
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST [NodeBinariesModule] Download installation binaries
+
+[0m[32m[2024-08-19 14:21:15] INFO | registry | y    | y    | y       | y        | y     | y     | y       | y         | y      | 20.10.8 | v1.4.9     | y          |             |                  | CST 14:21:00 |
+
+[0m[31m[2024-08-19 14:21:15] ERROR 14:21:00 CST message: [localhost]
+
+[0m[32m[2024-08-19 14:21:15] INFO | node2    | y    | y    | y       | y        | y     | y     |         | y         | y      |         | v1.6.4     | y          |             |                  | CST 14:21:00 |
+
+[0m[31m[2024-08-19 14:21:15] ERROR downloading amd64 kubeadm v1.24.9 ...
+
+[0m[32m[2024-08-19 14:21:15] INFO +----------+------+------+---------+----------+-------+-------+---------+-----------+--------+---------+------------+------------+-------------+------------------+--------------+
+
+[0m[32m[2024-08-19 14:21:15] INFO 
+
+[0m[32m[2024-08-19 14:21:15] INFO This is a simple check of your environment.
+
+[0m[32m[2024-08-19 14:21:15] INFO Before installation, ensure that your machines meet all requirements specified at
+
+[0m[32m[2024-08-19 14:21:15] INFO https://github.com/kubesphere/kubekey#requirements-and-recommendations
+
+[0m[32m[2024-08-19 14:21:15] INFO 
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:00 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR kubeadm is existed
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:00 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR downloading amd64 kubelet v1.24.9 ...
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR kubelet is existed
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR downloading amd64 kubectl v1.24.9 ...
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR kubectl is existed
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR downloading amd64 helm v3.9.0 ...
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR helm is existed
+
+[0m[31m[2024-08-19 14:21:16] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:16] ERROR downloading amd64 kubecni v0.9.1 ...
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR kubecni is existed
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR downloading amd64 crictl v1.24.0 ...
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR crictl is existed
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR downloading amd64 etcd v3.4.13 ...
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR etcd is existed
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:01 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR downloading amd64 containerd 1.6.4 ...
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR containerd is existed
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR downloading amd64 runc v1.1.1 ...
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST message: [localhost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR runc is existed
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST success: [LocalHost]
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST [ConfigureOSModule] Get OS release
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:17] ERROR 14:21:02 CST [ConfigureOSModule] Prepare to init OS
+
+[0m[31m[2024-08-19 14:21:22] ERROR 14:21:07 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:22] ERROR 14:21:07 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:22] ERROR 14:21:07 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:22] ERROR 14:21:07 CST [ConfigureOSModule] Generate init os script
+
+[0m[31m[2024-08-19 14:21:23] ERROR 14:21:08 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:23] ERROR 14:21:08 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:23] ERROR 14:21:08 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:23] ERROR 14:21:08 CST [ConfigureOSModule] Exec init os script
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST stdout: [registry]
+
+[0m[31m[2024-08-19 14:21:24] ERROR setenforce: SELinux is disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR Disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.suid_dumpable = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_forward = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_echo_ignore_broadcasts = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_ignore_bogus_error_responses = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.tcp_syncookies = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.dmesg_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.core.busy_read = 100
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_background_ratio = 30
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_ratio = 50
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.sysrq = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.panic = 3
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.route.flush = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.randomize_va_space = 2
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.forwarding = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.kptr_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-arptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-ip6tables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-iptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_local_reserved_ports = 30000-32767
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.max_map_count = 262144
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.swappiness = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.inotify.max_user_instances = 524288
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.pid_max = 65535
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:21:24] ERROR setenforce: SELinux is disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR Disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.suid_dumpable = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_forward = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_echo_ignore_broadcasts = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_ignore_bogus_error_responses = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.tcp_syncookies = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.dmesg_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.core.busy_read = 100
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_background_ratio = 30
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_ratio = 50
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.sysrq = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.panic = 3
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.route.flush = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.randomize_va_space = 2
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.forwarding = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.kptr_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-arptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-ip6tables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-iptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_local_reserved_ports = 30000-32767
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.max_map_count = 262144
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.swappiness = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.inotify.max_user_instances = 524288
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.pid_max = 65535
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:24] ERROR setenforce: SELinux is disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR Disabled
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.suid_dumpable = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_forward = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.send_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_source_route = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.secure_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_echo_ignore_broadcasts = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.icmp_ignore_bogus_error_responses = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.rp_filter = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.tcp_syncookies = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.dmesg_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.default.accept_redirects = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.core.busy_read = 100
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_background_ratio = 30
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.dirty_ratio = 50
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.sysrq = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.panic = 3
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.all.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.conf.default.log_martians = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.route.flush = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.randomize_va_space = 2
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv6.conf.all.forwarding = 0
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.kptr_restrict = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-arptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-ip6tables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.bridge.bridge-nf-call-iptables = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR net.ipv4.ip_local_reserved_ports = 30000-32767
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.max_map_count = 262144
+
+[0m[31m[2024-08-19 14:21:24] ERROR vm.swappiness = 1
+
+[0m[31m[2024-08-19 14:21:24] ERROR fs.inotify.max_user_instances = 524288
+
+[0m[31m[2024-08-19 14:21:24] ERROR kernel.pid_max = 65535
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:24] ERROR 14:21:09 CST [ConfigureOSModule] configure the ntp server for each node
+
+[0m[31m[2024-08-19 14:21:26] ERROR 14:21:11 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:21:26] ERROR 210 Number of sources = 2
+
+[0m[31m[2024-08-19 14:21:26] ERROR MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+
+[0m[31m[2024-08-19 14:21:26] ERROR ===============================================================================
+
+[0m[31m[2024-08-19 14:21:26] ERROR ^? node1.cluster.local           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:26] ERROR ^? 106.11.249.99                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:11 CST stdout: [registry]
+
+[0m[31m[2024-08-19 14:21:27] ERROR 210 Number of sources = 6
+
+[0m[31m[2024-08-19 14:21:27] ERROR MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+
+[0m[31m[2024-08-19 14:21:27] ERROR ===============================================================================
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? node1.cluster.local           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? 140.205.60.46                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? tock.ntp.infomaniak.ch        0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? time.cloudflare.com           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? electrode.felixc.at           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? 114.118.7.163                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:12 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:27] ERROR 210 Number of sources = 6
+
+[0m[31m[2024-08-19 14:21:27] ERROR MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+
+[0m[31m[2024-08-19 14:21:27] ERROR ===============================================================================
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? node1.cluster.local           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? 106.11.248.146                0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? electrode.felixc.at           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? dns1.synet.edu.cn             0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? time.cloudflare.com           0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR ^? 114.118.7.163                 0   6     0     -     +0ns[   +0ns] +/-    0ns
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:12 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:12 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:12 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:27] ERROR 14:21:12 CST [InitRegistryModule] Fetch registry certs
+
+[0m[31m[2024-08-19 14:21:28] ERROR 14:21:13 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:28] ERROR 14:21:13 CST [InitRegistryModule] Generate registry Certs
+
+[0m[32m[2024-08-19 14:21:28] INFO [certs] Using existing ca certificate authority
+
+[0m[31m[2024-08-19 14:21:28] ERROR 14:21:13 CST success: [LocalHost]
+
+[0m[32m[2024-08-19 14:21:28] INFO [certs] Using existing dockerhub.kubekey.local certificate and key on disk
+
+[0m[31m[2024-08-19 14:21:28] ERROR 14:21:13 CST [InitRegistryModule] Synchronize certs file
+
+[0m[31m[2024-08-19 14:21:32] ERROR 14:21:17 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:32] ERROR 14:21:17 CST [InitRegistryModule] Synchronize certs file to all nodes
+
+[0m[31m[2024-08-19 14:21:40] ERROR 14:21:24 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:40] ERROR 14:21:24 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:40] ERROR 14:21:24 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:40] ERROR 14:21:24 CST [KubernetesStatusModule] Get kubernetes cluster status
+
+[0m[31m[2024-08-19 14:21:40] ERROR 14:21:25 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:40] ERROR v1.24.9
+
+[0m[31m[2024-08-19 14:21:41] ERROR 14:21:25 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:41] ERROR node1   v1.24.9   [map[address:192.168.227.161 type:InternalIP] map[address:node1 type:Hostname]]
+
+[0m[31m[2024-08-19 14:21:44] ERROR 14:21:28 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:44] ERROR I0819 14:21:27.504489   24123 version.go:255] remote version is much newer: v1.31.0; falling back to: stable-1.24
+
+[0m[31m[2024-08-19 14:21:44] ERROR [upload-certs] Storing the certificates in Secret "kubeadm-certs" in the "kube-system" Namespace
+
+[0m[31m[2024-08-19 14:21:44] ERROR [upload-certs] Using certificate key:
+
+[0m[31m[2024-08-19 14:21:44] ERROR 4a2e919effac2b1da411883466beb218eb40a64166dede6fad3c91b435fb3a95
+
+[0m[31m[2024-08-19 14:21:44] ERROR 14:21:29 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:44] ERROR secret/kubeadm-certs patched
+
+[0m[31m[2024-08-19 14:21:44] ERROR 14:21:29 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:44] ERROR secret/kubeadm-certs patched
+
+[0m[31m[2024-08-19 14:21:44] ERROR 14:21:29 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:44] ERROR secret/kubeadm-certs patched
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 9b3u16.hwadesc5b811dwox
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST [InstallContainerModule] Sync containerd binaries
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:29 CST [InstallContainerModule] Sync crictl binaries
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST [InstallContainerModule] Generate containerd service
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST [InstallContainerModule] Generate containerd config
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:45] ERROR 14:21:30 CST [InstallContainerModule] Generate crictl config
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST [InstallContainerModule] Enable containerd
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST skipped: [node2]
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST [PullModule] Start to pull images on all nodes
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/pause:3.7
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:30 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/pause:3.7
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:31 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-apiserver:v1.24.9
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:31 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-proxy:v1.24.9
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:31 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/coredns:1.8.6
+
+[0m[31m[2024-08-19 14:21:46] ERROR 14:21:31 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:46] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-controller-manager:v1.24.9
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:31 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.15.12
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:31 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-scheduler:v1.24.9
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.23.2
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-proxy:v1.24.9
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/cni:v3.23.2
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/coredns:1.8.6
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/node:v3.23.2
+
+[0m[31m[2024-08-19 14:21:47] ERROR 14:21:32 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:47] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.15.12
+
+[0m[31m[2024-08-19 14:21:48] ERROR 14:21:32 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:48] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.23.2
+
+[0m[31m[2024-08-19 14:21:48] ERROR 14:21:32 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:48] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.23.2
+
+[0m[31m[2024-08-19 14:21:48] ERROR 14:21:33 CST message: [node2]
+
+[0m[31m[2024-08-19 14:21:48] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/haproxy:2.3
+
+[0m[31m[2024-08-19 14:21:48] ERROR 14:21:33 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:48] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/cni:v3.23.2
+
+[0m[31m[2024-08-19 14:21:48] ERROR 14:21:33 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:48] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/node:v3.23.2
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:33 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:49] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.23.2
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:33 CST message: [node1]
+
+[0m[31m[2024-08-19 14:21:49] ERROR downloading image: dockerhub.kubekey.local/kubesphereio/haproxy:2.3
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:34 CST success: [registry]
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:34 CST success: [node2]
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:34 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:49] ERROR 14:21:34 CST [ETCDPreCheckModule] Get etcd status
+
+[0m[31m[2024-08-19 14:21:50] ERROR 14:21:34 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:21:50] ERROR ETCD_NAME=etcd-node1
+
+[0m[31m[2024-08-19 14:21:50] ERROR 14:21:34 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:50] ERROR 14:21:34 CST [CertsModule] Fetch etcd certs
+
+[0m[31m[2024-08-19 14:21:52] ERROR 14:21:36 CST success: [node1]
+
+[0m[31m[2024-08-19 14:21:52] ERROR 14:21:36 CST [CertsModule] Generate etcd Certs
+
+[0m[32m[2024-08-19 14:21:52] INFO [certs] Using existing ca certificate authority
+
+[0m[31m[2024-08-19 14:21:52] ERROR 14:21:36 CST success: [LocalHost]
+
+[0m[32m[2024-08-19 14:21:52] INFO [certs] Using existing admin-node1 certificate and key on disk
+
+[0m[31m[2024-08-19 14:21:52] ERROR 14:21:36 CST [CertsModule] Synchronize certs file
+
+[0m[32m[2024-08-19 14:21:52] INFO [certs] Using existing member-node1 certificate and key on disk
+
+[0m[32m[2024-08-19 14:21:52] INFO [certs] Using existing node-node1 certificate and key on disk
+
+[0m[31m[2024-08-19 14:22:01] ERROR 14:21:46 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:01] ERROR 14:21:46 CST [CertsModule] Synchronize certs file to master
+
+[0m[31m[2024-08-19 14:22:01] ERROR 14:21:46 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:01] ERROR 14:21:46 CST [InstallETCDBinaryModule] Install etcd using binary
+
+[0m[31m[2024-08-19 14:22:03] ERROR 14:21:48 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:03] ERROR 14:21:48 CST [InstallETCDBinaryModule] Generate etcd service
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [InstallETCDBinaryModule] Generate access address
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Health check on exist etcd
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Generate etcd.env config on new etcd
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Join etcd member
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Restart etcd
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Health check on new etcd
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Check etcd member
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:05] ERROR 14:21:49 CST [ETCDConfigureModule] Refresh etcd.env config on all etcd
+
+[0m[31m[2024-08-19 14:22:06] ERROR 14:21:51 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:06] ERROR 14:21:51 CST [ETCDConfigureModule] Health check on all etcd
+
+[0m[31m[2024-08-19 14:22:06] ERROR 14:21:51 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:06] ERROR 14:21:51 CST [ETCDBackupModule] Backup etcd data regularly
+
+[0m[31m[2024-08-19 14:22:08] ERROR 14:21:53 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:08] ERROR 14:21:53 CST [ETCDBackupModule] Generate backup ETCD service
+
+[0m[31m[2024-08-19 14:22:09] ERROR 14:21:54 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:09] ERROR 14:21:54 CST [ETCDBackupModule] Generate backup ETCD timer
+
+[0m[31m[2024-08-19 14:22:11] ERROR 14:21:55 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:11] ERROR 14:21:55 CST [ETCDBackupModule] Enable backup etcd service
+
+[0m[31m[2024-08-19 14:22:11] ERROR 14:21:56 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:11] ERROR 14:21:56 CST [InstallKubeBinariesModule] Synchronize kubernetes binaries
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST [InstallKubeBinariesModule] Synchronize kubelet
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:34] ERROR 14:22:18 CST [InstallKubeBinariesModule] Generate kubelet service
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST [InstallKubeBinariesModule] Enable kubelet service
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:35] ERROR 14:22:20 CST [InstallKubeBinariesModule] Generate kubelet env
+
+[0m[31m[2024-08-19 14:22:37] ERROR 14:22:21 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:37] ERROR 14:22:21 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:37] ERROR 14:22:21 CST [JoinNodesModule] Generate kubeadm config
+
+[0m[31m[2024-08-19 14:22:38] ERROR 14:22:23 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:38] ERROR 14:22:23 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:38] ERROR 14:22:23 CST [JoinNodesModule] Join control-plane node
+
+[0m[31m[2024-08-19 14:22:38] ERROR 14:22:23 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:38] ERROR 14:22:23 CST [JoinNodesModule] Join worker node
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:22:53] ERROR W0819 14:22:23.780222   50562 common.go:84] your configuration file uses a deprecated API spec: "kubeadm.k8s.io/v1beta2". Please use 'kubeadm config migrate --old-config old.yaml --new-config new.yaml', which will write the new, similar spec using a newer API version.
+
+[0m[31m[2024-08-19 14:22:53] ERROR [preflight] Running pre-flight checks
+
+[0m[31m[2024-08-19 14:22:53] ERROR [preflight] Reading configuration from the cluster...
+
+[0m[31m[2024-08-19 14:22:53] ERROR [preflight] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -o yaml'
+
+[0m[31m[2024-08-19 14:22:53] ERROR W0819 14:22:23.894486   50562 utils.go:69] The recommended value for "clusterDNS" in "KubeletConfiguration" is: [10.233.0.10]; the provided value is: [169.254.25.10]
+
+[0m[31m[2024-08-19 14:22:53] ERROR [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+
+[0m[31m[2024-08-19 14:22:53] ERROR [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+
+[0m[31m[2024-08-19 14:22:53] ERROR [kubelet-start] Starting the kubelet
+
+[0m[31m[2024-08-19 14:22:53] ERROR [kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...
+
+[0m[31m[2024-08-19 14:22:53] ERROR 
+
+[0m[31m[2024-08-19 14:22:53] ERROR This node has joined the cluster:
+
+[0m[31m[2024-08-19 14:22:53] ERROR * Certificate signing request was sent to apiserver and a response was received.
+
+[0m[31m[2024-08-19 14:22:53] ERROR * The Kubelet was informed of the new secure connection details.
+
+[0m[31m[2024-08-19 14:22:53] ERROR 
+
+[0m[31m[2024-08-19 14:22:53] ERROR Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST [JoinNodesModule] Copy admin.conf to ~/.kube/config
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST [JoinNodesModule] Remove master taint
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST [JoinNodesModule] Add worker label to master
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:37 CST [JoinNodesModule] Synchronize kube config to worker
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:38 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:38 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:53] ERROR 14:22:38 CST [JoinNodesModule] Add worker label to worker
+
+[0m[31m[2024-08-19 14:22:54] ERROR 14:22:38 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:22:54] ERROR node/node2 labeled
+
+[0m[31m[2024-08-19 14:22:54] ERROR 14:22:38 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:54] ERROR 14:22:38 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:54] ERROR 14:22:38 CST [InternalLoadbalancerModule] Generate haproxy.cfg
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:39 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:39 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:39 CST [InternalLoadbalancerModule] Calculate the MD5 value according to haproxy.cfg
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:40 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:40 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:55] ERROR 14:22:40 CST [InternalLoadbalancerModule] Generate haproxy manifest
+
+[0m[31m[2024-08-19 14:22:57] ERROR 14:22:41 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:57] ERROR 14:22:41 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:57] ERROR 14:22:41 CST [InternalLoadbalancerModule] Update kubelet config
+
+[0m[31m[2024-08-19 14:22:57] ERROR 14:22:42 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:22:57] ERROR server: https://127.0.0.1:6443
+
+[0m[31m[2024-08-19 14:22:58] ERROR 14:22:42 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:22:58] ERROR server: https://lb.cars.local:6443
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:43 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:43 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:43 CST [InternalLoadbalancerModule] Update kube-proxy configmap
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST [InternalLoadbalancerModule] Update /etc/hosts
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST [ConfigureKubernetesModule] Configure kubernetes
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST success: [node2]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST success: [node1]
+
+[0m[31m[2024-08-19 14:22:59] ERROR 14:22:44 CST [ChownModule] Chown user $HOME/.kube dir
+
+[0m[31m[2024-08-19 14:23:00] ERROR 14:22:45 CST success: [node2]
+
+[0m[31m[2024-08-19 14:23:00] ERROR 14:22:45 CST success: [node1]
+
+[0m[31m[2024-08-19 14:23:00] ERROR 14:22:45 CST [AutoRenewCertsModule] Generate k8s certs renew script
+
+[0m[31m[2024-08-19 14:23:01] ERROR 14:22:46 CST success: [node1]
+
+[0m[31m[2024-08-19 14:23:01] ERROR 14:22:46 CST [AutoRenewCertsModule] Generate k8s certs renew service
+
+[0m[31m[2024-08-19 14:23:03] ERROR 14:22:47 CST success: [node1]
+
+[0m[31m[2024-08-19 14:23:03] ERROR 14:22:47 CST [AutoRenewCertsModule] Generate k8s certs renew timer
+
+[0m[31m[2024-08-19 14:23:04] ERROR 14:22:49 CST success: [node1]
+
+[0m[31m[2024-08-19 14:23:04] ERROR 14:22:49 CST [AutoRenewCertsModule] Enable k8s certs renew service
+
+[0m[31m[2024-08-19 14:23:05] ERROR 14:22:49 CST success: [node1]
+
+[0m[31m[2024-08-19 14:23:05] ERROR 14:22:49 CST Pipeline[AddNodesPipeline] execute successfully
+
+[0m[32m[2024-08-19 14:23:05] INFO Pipeline Done
+
+[0m[32m[2024-08-19 14:23:05] INFO 
+[0m[32m[2024-08-19 14:30:25] INFO 
+
+[0m[32m[2024-08-19 14:30:25] INFO 
+
+[0m[32m[2024-08-19 14:30:25] INFO  _   __      _          _   __           
+
+[0m[32m[2024-08-19 14:30:25] INFO | | / /     | |        | | / /           
+
+[0m[31m[2024-08-19 14:30:25] ERROR 14:30:09 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-08-19 14:30:25] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-08-19 14:30:25] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-08-19 14:30:25] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-08-19 14:30:25] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-08-19 14:30:25] INFO                                     __/ |
+
+[0m[32m[2024-08-19 14:30:25] INFO                                    |___/
+
+[0m[32m[2024-08-19 14:30:25] INFO 
+
+[0m[31m[2024-08-19 14:30:25] ERROR 14:30:10 CST message: [node2]
+
+[0m[31m[2024-08-19 14:30:25] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:30:25] ERROR 14:30:10 CST message: [node1]
+
+[0m[31m[2024-08-19 14:30:25] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST message: [registry]
+
+[0m[31m[2024-08-19 14:30:26] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST success: [node2]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST success: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST success: [registry]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST [DeleteNodeConfirmModule] Display confirmation form
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST success: [LocalHost]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:10 CST [CompareConfigAndClusterInfoModule] Find information about nodes that are expected to be deleted
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR node2
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST success: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST [DeleteKubeNodeModule] Node safely evict all pods
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR node/node2 cordoned
+
+[0m[31m[2024-08-19 14:30:26] ERROR WARNING: ignoring DaemonSet-managed Pods: kube-system/calico-node-6f9fp, kube-system/kube-proxy-xzsg2, kube-system/nodelocaldns-tjrct
+
+[0m[31m[2024-08-19 14:30:26] ERROR node/node2 drained
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST success: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST [DeleteKubeNodeModule] Delete the node using kubectl
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR node "node2" deleted
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST success: [node1]
+
+[0m[31m[2024-08-19 14:30:26] ERROR 14:30:11 CST [ClearNodeOSModule] Reset os network config
+
+[0m[31m[2024-08-19 14:30:27] ERROR 14:30:12 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:30:27] ERROR /bin/bash: line 1: ipvsadm: command not found
+
+[0m[31m[2024-08-19 14:30:28] ERROR 14:30:12 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:30:28] ERROR Cannot find device "kube-ipvs0"
+
+[0m[31m[2024-08-19 14:30:28] ERROR 14:30:12 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:30:28] ERROR 14:30:12 CST success: [node2]
+
+[0m[31m[2024-08-19 14:30:28] ERROR 14:30:12 CST [ClearNodeOSModule] Remove node files
+
+[0m[31m[2024-08-19 14:30:29] ERROR 14:30:14 CST stdout: [node2]
+
+[0m[31m[2024-08-19 14:30:29] ERROR rm: cannot remove '/var/lib/kubelet/pods/6186ea33-20c8-4895-92c1-31e4cc399991/volumes/kubernetes.io~projected/kube-api-access-665th': Device or resource busy
+
+[0m[31m[2024-08-19 14:30:29] ERROR rm: cannot remove '/var/lib/kubelet/pods/2ac20025-0f91-4098-a3b2-2a779806463c/volumes/kubernetes.io~projected/kube-api-access-xx9nr': Device or resource busy
+
+[0m[31m[2024-08-19 14:30:29] ERROR rm: cannot remove '/var/lib/kubelet/pods/cc04413b-a2bd-498e-a265-733c8679fea8/volumes/kubernetes.io~projected/kube-api-access-bbbsb': Device or resource busy
+
+[0m[31m[2024-08-19 14:30:31] ERROR 14:30:16 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:30:31] ERROR 14:30:16 CST success: [node2]
+
+[0m[31m[2024-08-19 14:30:31] ERROR 14:30:16 CST [ClearNodeOSModule] Systemd daemon reload
+
+[0m[31m[2024-08-19 14:30:32] ERROR 14:30:17 CST skipped: [node1]
+
+[0m[31m[2024-08-19 14:30:32] ERROR 14:30:17 CST success: [node2]
+
+[0m[31m[2024-08-19 14:30:32] ERROR 14:30:17 CST Pipeline[DeleteNodePipeline] execute successfully
+
+[0m[32m[2024-08-19 14:30:32] INFO 
+[0m[32m[2024-08-19 14:30:32] INFO Pipeline Done
+
+[0m[32m[2024-08-19 14:30:32] INFO Are you sure to delete this node? [yes/no]: 
+
+[0m[32m[2024-08-19 14:32:32] INFO 
+
+[0m[32m[2024-08-19 14:32:32] INFO 
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:16 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-08-19 14:32:32] INFO  _   __      _          _   __           
+
+[0m[32m[2024-08-19 14:32:32] INFO | | / /     | |        | | / /           
+
+[0m[32m[2024-08-19 14:32:32] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-08-19 14:32:32] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-08-19 14:32:32] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-08-19 14:32:32] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-08-19 14:32:32] INFO                                     __/ |
+
+[0m[32m[2024-08-19 14:32:32] INFO                                    |___/
+
+[0m[32m[2024-08-19 14:32:32] INFO 
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST message: [node1]
+
+[0m[31m[2024-08-19 14:32:32] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST message: [registry]
+
+[0m[31m[2024-08-19 14:32:32] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST success: [registry]
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST [DeleteClusterConfirmModule] Display confirmation form
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST success: [LocalHost]
+
+[0m[31m[2024-08-19 14:32:32] ERROR 14:32:17 CST [ResetClusterModule] Reset the cluster using kubeadm
+
+[0m[31m[2024-08-19 14:32:35] ERROR 14:32:19 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Reading configuration from the cluster...
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -o yaml'
+
+[0m[31m[2024-08-19 14:32:35] ERROR W0819 14:32:17.750750   50189 utils.go:69] The recommended value for "clusterDNS" in "KubeletConfiguration" is: [10.233.0.10]; the provided value is: [169.254.25.10]
+
+[0m[31m[2024-08-19 14:32:35] ERROR [preflight] Running pre-flight checks
+
+[0m[31m[2024-08-19 14:32:35] ERROR W0819 14:32:17.760147   50189 removeetcdmember.go:84] [reset] No kubeadm config, using etcd pod spec to get data directory
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] No etcd config found. Assuming external etcd
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Please, manually reset etcd to prevent further issues
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Stopping the kubelet service
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Unmounting mounted directories in "/var/lib/kubelet"
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Deleting contents of directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
+
+[0m[31m[2024-08-19 14:32:35] ERROR [reset] Deleting contents of stateful directories: [/var/lib/kubelet /var/lib/dockershim /var/run/kubernetes /var/lib/cni]
+
+[0m[31m[2024-08-19 14:32:35] ERROR 
+
+[0m[31m[2024-08-19 14:32:35] ERROR The reset process does not clean CNI configuration. To do so, you must remove /etc/cni/net.d
+
+[0m[31m[2024-08-19 14:32:35] ERROR 
+
+[0m[31m[2024-08-19 14:32:35] ERROR The reset process does not reset or clean up iptables rules or IPVS tables.
+
+[0m[31m[2024-08-19 14:32:35] ERROR If you wish to reset iptables, you must do so manually by using the "iptables" command.
+
+[0m[31m[2024-08-19 14:32:35] ERROR 
+
+[0m[31m[2024-08-19 14:32:35] ERROR If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
+
+[0m[31m[2024-08-19 14:32:35] ERROR to reset your system's IPVS tables.
+
+[0m[31m[2024-08-19 14:32:35] ERROR 
+
+[0m[31m[2024-08-19 14:32:35] ERROR The reset process does not clean your kubeconfig files and you must remove them manually.
+
+[0m[31m[2024-08-19 14:32:35] ERROR Please, check the contents of the $HOME/.kube/config file.
+
+[0m[31m[2024-08-19 14:32:35] ERROR 14:32:19 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:35] ERROR 14:32:19 CST [ClearOSModule] Reset os network config
+
+[0m[31m[2024-08-19 14:32:36] ERROR 14:32:21 CST stdout: [node1]
+
+[0m[31m[2024-08-19 14:32:36] ERROR Cannot find device "kube-ipvs0"
+
+[0m[31m[2024-08-19 14:32:36] ERROR 14:32:21 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:36] ERROR 14:32:21 CST [ClearOSModule] Uninstall etcd
+
+[0m[31m[2024-08-19 14:32:37] ERROR 14:32:22 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:37] ERROR 14:32:22 CST [ClearOSModule] Remove cluster files
+
+[0m[31m[2024-08-19 14:32:41] ERROR 14:32:26 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:41] ERROR 14:32:26 CST [ClearOSModule] Systemd daemon reload
+
+[0m[31m[2024-08-19 14:32:42] ERROR 14:32:27 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:42] ERROR 14:32:27 CST [UninstallAutoRenewCertsModule] UnInstall auto renew control-plane certs
+
+[0m[31m[2024-08-19 14:32:44] ERROR 14:32:28 CST success: [node1]
+
+[0m[31m[2024-08-19 14:32:44] ERROR 14:32:28 CST Pipeline[DeleteClusterPipeline] execute successfully
+
+[0m[32m[2024-08-19 14:32:44] INFO 
+[0m[32m[2024-08-19 14:32:44] INFO Pipeline Done
+
+[0m[32m[2024-08-19 14:32:44] INFO Are you sure to delete this cluster? [yes/no]: 
+
+[0m

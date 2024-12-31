@@ -1,0 +1,18 @@
+[32m[2024-10-10 13:57:25] INFO Method: POST | Path: /api/v1/server/dnsparallel | Status: 200 | Duration: 651.1124ms | IP: ::1
+
+[0m[32m[2024-10-10 13:57:25] INFO {{0 2024-10-10 13:57:24.4329151 +0800 CST m=+27.872978101 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728539845 /api/v1/server/dnsparallel /api/v1/server/dnsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 13:58:28] INFO Method: POST | Path: /api/v1/server/dnsparallel | Status: 200 | Duration: 465.3842ms | IP: ::1
+
+[0m[32m[2024-10-10 13:58:28] INFO {{0 2024-10-10 13:58:27.7400599 +0800 CST m=+91.180122901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728539908 /api/v1/server/dnsparallel /api/v1/server/dnsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 14:02:59] INFO Successfully to execute command on 192.168.227.161
+
+[0m[32m[2024-10-10 14:02:59] INFO Successfully to execute command on 192.168.227.160
+
+[0m[32m[2024-10-10 14:02:59] INFO Successfully to execute command on 192.168.227.163
+
+[0m[32m[2024-10-10 14:02:59] INFO Successfully to execute command on 192.168.227.162
+
+[0m[32m[2024-10-10 14:02:59] INFO Method: POST | Path: /api/v1/server/execmdparallel | Status: 200 | Duration: 265.4438ms | IP: ::1
+
+[0m[32m[2024-10-10 14:02:59] INFO {{0 2024-10-10 14:02:59.475178 +0800 CST m=+362.915241001 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728540179 /api/v1/server/execmdparallel /api/v1/server/execmdparallel example_module POST No description available for this endpoint.}
+[0m

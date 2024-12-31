@@ -1,0 +1,24 @@
+[32m[2024-09-04 17:16:15] INFO {{0 2024-09-04 17:16:13.6593488 +0800 CST m=+3.171617701 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725441375 /api/v1/apiserver/configure /api/v1/apiserver/configure example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 17:16:15] INFO 
+[0m[32m[2024-09-04 17:19:43] INFO Successfully copied file to 192.168.227.161
+
+[0m[32m[2024-09-04 17:19:43] INFO Successfully copied file to 192.168.227.160
+
+[0m[31m[2024-09-04 17:19:43] ERROR Failed to create destination file: file does not exist
+[0m[31m[2024-09-04 17:19:43] ERROR Failed to copy file to 192.168.227.162: Failed to copy file to 192.168.227.162: file does not exist
+
+[0m[31m[2024-09-04 17:19:43] ERROR Copy keycloak certificate failed: add keycloak cert failed
+[0m[32m[2024-09-04 17:19:43] INFO [Recovery] 2024/09/04 - 17:19:43 panic recovered:
+add keycloak cert failed
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1641b84)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x16416d1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1322e2d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x130234f)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x1008d60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

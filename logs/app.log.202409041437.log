@@ -1,0 +1,30 @@
+[32m[2024-09-04 14:37:24] INFO preparing upgrade for bbb
+[0m[32m[2024-09-04 14:37:26] INFO performing update for bbb
+[0m[32m[2024-09-04 14:37:42] INFO creating upgraded release for bbb
+[0m[32m[2024-09-04 14:37:42] INFO checking 50 resources for changes
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "argocd-application-controller"
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "argocd-applicationset-controller"
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "argocd-notifications-controller"
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "bbb-argocd-repo-server"
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "argocd-server"
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for ServiceAccount "argocd-dex-server"
+[0m[32m[2024-09-04 14:37:42] INFO Patch Secret "argocd-notifications-secret" in namespace aaa
+[0m[32m[2024-09-04 14:37:42] INFO Looks like there are no changes for Secret "argocd-secret"
+[0m[32m[2024-09-04 14:37:42] INFO warning: Upgrade "bbb" failed: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:37:43] INFO release upgrade failed: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:37:43] ERROR Faile to install or update chart release: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:37:43] ERROR Error Install helm charts to kubernetes: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:37:43] INFO [Recovery] 2024/09/04 - 14:37:43 panic recovered:
+failed to create resource: namespaces "argocd-system" not found
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xa61b84)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xa616d1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x742e2d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x72234f)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x428d60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

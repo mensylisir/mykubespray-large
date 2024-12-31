@@ -1,0 +1,16 @@
+[31m[2024-10-11 15:20:54] ERROR Remote output: [sudo] password for wangzhendong: Sorry, try again.
+[0m[31m[2024-10-11 15:20:54] ERROR Failed to execute command: Process exited with status 1
+[0m[31m[2024-10-11 15:20:58] ERROR Remote output: [sudo] password for wangzhendong: 
+[0m[31m[2024-10-11 15:21:01] ERROR Remote output: sudo: no password was provided
+[0m[31m[2024-10-11 15:21:01] ERROR Failed to generate dir /home/wangzhendong/taichu/wangcluster: Process exited with status 1
+[0m[31m[2024-10-11 15:21:02] ERROR Remote output: sudo: 1 incorrect password attempt
+[0m[31m[2024-10-11 15:23:04] ERROR SSH command execution failed: Process exited with status 1
+[0m[32m[2024-10-11 15:23:04] INFO error: Unable to open the given cluster configuration file: open /home/wangzhendong/homewangzhendongtaichuwangclusterconfig-sample.yaml: no such file or directory
+
+[0m[31m[2024-10-11 15:23:04] ERROR Pipeline Done
+
+[0m[31m[2024-10-11 15:23:04] ERROR Failed to delete cluster wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 15:23:04] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 2m24.9085028s | IP: 127.0.0.1
+
+[0m[32m[2024-10-11 15:23:04] INFO {{0 2024-10-11 15:20:40.044136 +0800 CST m=+3.785935001 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728631384 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

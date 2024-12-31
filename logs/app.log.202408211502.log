@@ -1,0 +1,8 @@
+[31m[2024-08-21 15:03:11] ERROR error: Unable to unmarshal the given cluster configuration file: yaml: line 57: did not find expected ',' or ']'
+
+[0m[31m[2024-08-21 15:03:11] ERROR SSH command execution failed: Process exited with status 1
+[0m[31m[2024-08-21 15:03:11] ERROR Pipeline Done
+
+[0m[31m[2024-08-21 15:03:11] ERROR Failed to create cluster wangcluster: Process exited with status 1
+[0m[32m[2024-08-21 15:03:11] INFO 
+[0m

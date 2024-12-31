@@ -1,0 +1,95 @@
+apiVersion: audit.k8s.io/v1
+kind: Policy
+rules:
+  # 第一条匹配规则会覆盖后面的规则，因此顺序很重要。
+
+  # 1. 对于系统自带的事件 (events)，不记录审计日志
+  - level: None
+    resources:
+      - group: ""
+        resources: ["events"]
+
+  # 2. 对于系统的认证请求 (tokens)，仅记录元数据
+  - level: Metadata
+    omitStages:
+      - "RequestReceived"
+    resources:
+      - group: "authentication.k8s.io"
+        resources: ["tokenreviews"]
+      - group: "authorization.k8s.io"
+        resources: ["subjectaccessreviews"]
+
+  # 3. 对于配置映射和密钥，仅记录元数据 (避免记录敏感数据)
+  - level: Metadata
+    resources:
+      - group: ""
+        resources: ["secrets", "configmaps"]
+
+  # 4. 对于节点状态的读取 (status)，记录请求元数据
+  - level: Metadata
+    verbs: ["get", "list", "watch"]
+    resources:
+      - group: ""
+        resources: ["nodes/status"]
+
+  # 5. 对于删除或修改节点的操作，记录请求的详细内容
+  - level: Request
+    verbs: ["delete", "patch", "update"]
+    resources:
+      - group: ""
+        resources: ["nodes"]
+
+  # 6. 对于 Pod 读取操作 (get、list、watch)，记录元数据
+  - level: Metadata
+    verbs: ["get", "list", "watch"]
+    resources:
+      - group: ""
+        resources: ["pods"]
+
+  # 7. 对于 Pod 的创建、删除、更新等操作，记录详细请求内容
+  - level: RequestResponse
+    verbs: ["create", "delete", "update", "patch"]
+    resources:
+      - group: ""
+        resources: ["pods"]
+
+  # 8. 对于对系统组件 (例如 kube-system namespace) 的所有操作，记录请求和响应
+  - level: RequestResponse
+    namespaces: ["kube-system"]
+    omitStages:
+      - "RequestReceived"
+
+  # 9. 记录对集群角色和角色绑定的操作，以确保安全性
+  - level: RequestResponse
+    resources:
+      - group: "rbac.authorization.k8s.io"
+        resources: ["clusterroles", "clusterrolebindings", "roles", "rolebindings"]
+
+  # 10. 对于所有与安全相关的资源 (PSPs、NetworkPolicies)，记录请求和响应
+  - level: RequestResponse
+    resources:
+      - group: "policy"
+        resources: ["podsecuritypolicies"]
+      - group: "networking.k8s.io"
+        resources: ["networkpolicies"]
+
+  # 11. 对于 kube-apiserver 的 exec 相关操作 (kubectl exec)，记录详细内容
+  - level: RequestResponse
+    resources:
+      - group: ""
+        resources: ["pods/exec"]
+
+  # 12. 对于集群的敏感资源 (如证书签发、集群信息)，记录详细请求和响应
+  - level: RequestResponse
+    resources:
+      - group: "certificates.k8s.io"
+        resources: ["certificatesigningrequests"]
+      - group: ""
+        resources: ["namespaces", "nodes", "persistentvolumes"]
+      - group: "storage.k8s.io"
+        resources: ["storageclasses", "volumeattachments"]
+
+  # 13. 默认策略: 记录请求元数据，忽略接收阶段日志
+  - level: Metadata
+    omitStages:
+      - "RequestReceived"

@@ -1,0 +1,4 @@
+[32m[2024-10-12 08:53:10] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 27.3196728s | IP: 127.0.0.1
+
+[0m[32m[2024-10-12 08:53:10] INFO {{0 2024-10-12 08:52:42.9703804 +0800 CST m=+6.951147401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728694390 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

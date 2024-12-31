@@ -1,0 +1,31 @@
+all:
+  hosts:
+    control-plane-1:
+      ansible_host: 192.168.1.101
+      ansible_user: myuser
+      ansible_ssh_pass: mypassword
+      ip: 192.168.227.141
+      access_ip: 192.168.227.141
+    control-plane-2:
+      ansible_host: 192.168.1.102
+      ansible_user: myuser
+      ansible_ssh_pass: mypassword
+    control-plane-3:
+      ansible_host: 192.168.1.103
+      ansible_user: myuser
+      ansible_ssh_pass: mypassword
+
+  children:
+    kube-master:
+      hosts:
+        control-plane-1:
+        control-plane-2:
+        control-plane-3:
+
+    # 配置负载均衡器
+    loadbalancer:
+      hosts:
+        loadbalancer-1:
+          ansible_host: 192.168.1.100
+          ansible_user: myuser
+          ansible_ssh_pass: mypassword

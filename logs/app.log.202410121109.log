@@ -1,0 +1,518 @@
+[32m[2024-10-12 11:10:40] INFO Successfully copied file to 192.168.227.161
+
+[0m[32m[2024-10-12 11:10:42] INFO Successfully copied file to 192.168.227.162
+
+[0m[32m[2024-10-12 11:10:42] INFO Successfully copied file to 192.168.227.160
+
+[0m[32m[2024-10-12 11:10:42] INFO Method: POST | Path: /api/v1/server/cert/copyparallel | Status: 200 | Duration: 24.423307s | IP: ::1
+
+[0m[32m[2024-10-12 11:10:42] INFO {{0 2024-10-12 11:10:18.3868905 +0800 CST m=+67.083764601 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728702642 /api/v1/server/cert/copyparallel /api/v1/server/cert/copyparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-12 11:22:05] INFO Method: POST | Path: /api/v1/apiserver/configure | Status: 200 | Duration: 22.0720631s | IP: ::1
+
+[0m[32m[2024-10-12 11:22:05] INFO {{0 2024-10-12 11:21:43.4015071 +0800 CST m=+752.098381201 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728703325 /api/v1/apiserver/configure /api/v1/apiserver/configure example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-12 13:31:10] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-12 13:31:10] INFO Add Hosts
+[0m[32m[2024-10-12 13:31:10] INFO Method: POST | Path: /api/v1/server/hosts | Status: 200 | Duration: 4.1498367s | IP: ::1
+
+[0m[32m[2024-10-12 13:31:10] INFO {{0 2024-10-12 13:31:06.0742191 +0800 CST m=+8514.771093201 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728711070 /api/v1/server/hosts /api/v1/server/hosts example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-12 13:31:27] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-12 13:31:27] INFO Add Hosts
+[0m[32m[2024-10-12 13:31:27] INFO Method: POST | Path: /api/v1/server/hosts | Status: 200 | Duration: 4.0760459s | IP: ::1
+
+[0m[32m[2024-10-12 13:31:27] INFO {{0 2024-10-12 13:31:23.3372274 +0800 CST m=+8532.034101501 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728711087 /api/v1/server/hosts /api/v1/server/hosts example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-12 13:32:09] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-12 13:32:09] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-12 13:32:10] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-12 13:32:10] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-12 13:32:10] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-12 13:32:10] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-12 13:32:10] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-12 13:32:10] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-12 13:32:10] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 796.3063ms | IP: ::1
+
+[0m[32m[2024-10-12 13:32:10] INFO {{0 2024-10-12 13:32:09.3029792 +0800 CST m=+8577.999853301 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728711130 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[31m[2024-10-12 13:34:11] ERROR unmarshal data [sudo] password for wangzhendong: apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubeadm.kubernetes.io/kube-apiserver.advertise-address.endpoint: 192.168.227.161:6443
+  creationTimestamp: null
+  labels:
+    component: kube-apiserver
+    tier: control-plane
+  name: kube-apiserver
+  namespace: kube-system
+spec:
+  containers:
+  - command:
+    - kube-apiserver
+    - --advertise-address=192.168.227.161
+    - --allow-privileged=true
+    - --audit-log-maxage=30
+    - --audit-log-maxbackup=10
+    - --audit-log-maxsize=100
+    - --authorization-mode=Node,RBAC
+    - --bind-address=0.0.0.0
+    - --client-ca-file=/etc/kubernetes/pki/ca.crt
+    - --enable-admission-plugins=NodeRestriction
+    - --enable-bootstrap-token-auth=true
+    - --etcd-cafile=/etc/ssl/etcd/ssl/ca.pem
+    - --etcd-certfile=/etc/ssl/etcd/ssl/node-node1.pem
+    - --etcd-keyfile=/etc/ssl/etcd/ssl/node-node1-key.pem
+    - --etcd-servers=https://192.168.227.161:2379
+    - --feature-gates=RotateKubeletServerCertificate=true,ExpandCSIVolumes=true,CSIStorageCapacity=true
+    - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+    - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
+    - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+    - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
+    - --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
+    - --requestheader-allowed-names=front-proxy-client
+    - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+    - --requestheader-extra-headers-prefix=X-Remote-Extra-
+    - --requestheader-group-headers=X-Remote-Group
+    - --requestheader-username-headers=X-Remote-User
+    - --secure-port=6443
+    - --service-account-issuer=https://kubernetes.default.svc.cluster.local
+    - --service-account-key-file=/etc/kubernetes/pki/sa.pub
+    - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
+    - --service-cluster-ip-range=10.233.0.0/18
+    - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
+    - --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+    - --oidc-issuer-url=https://keycloak.kmpp.io/auth/realms/cars
+    - --oidc-client-id=kubernetes
+    - --oidc-username-claim=name
+    - --oidc-username-prefix=-
+    - --oidc-groups-claim=groups
+    - --oidc-ca-file=/etc/kubernetes/pki/keycloak.crt
+    image: dockerhub.kubekey.local/carsio/kube-apiserver:v1.24.9
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 8
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    name: kube-apiserver
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        host: 192.168.227.161
+        path: /readyz
+        port: 6443
+        scheme: HTTPS
+      periodSeconds: 1
+      timeoutSeconds: 15
+    resources:
+      requests:
+        cpu: 250m
+    startupProbe:
+      failureThreshold: 24
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    volumeMounts:
+    - mountPath: /etc/ssl/certs
+      name: ca-certs
+      readOnly: true
+    - mountPath: /etc/pki
+      name: etc-pki
+      readOnly: true
+    - mountPath: /etc/ssl/etcd/ssl
+      name: etcd-certs-0
+      readOnly: true
+    - mountPath: /etc/kubernetes/pki
+      name: k8s-certs
+      readOnly: true
+    - mountPath: /usr/share/ca-certificates
+      name: usr-share-ca-certificates
+      readOnly: true
+  hostNetwork: true
+  priorityClassName: system-node-critical
+  securityContext:
+    seccompProfile:
+      type: RuntimeDefault
+  volumes:
+  - hostPath:
+      path: /etc/ssl/certs
+      type: DirectoryOrCreate
+    name: ca-certs
+  - hostPath:
+      path: /etc/pki
+      type: DirectoryOrCreate
+    name: etc-pki
+  - hostPath:
+      path: /etc/ssl/etcd/ssl
+      type: DirectoryOrCreate
+    name: etcd-certs-0
+  - hostPath:
+      path: /etc/kubernetes/pki
+      type: DirectoryOrCreate
+    name: k8s-certs
+  - hostPath:
+      path: /usr/share/ca-certificates
+      type: DirectoryOrCreate
+    name: usr-share-ca-certificates
+status: {}
+
+ failed
+[0m[31m[2024-10-12 13:34:11] ERROR Failed to configure apiserver node1: yaml: did not find expected key
+[0m[31m[2024-10-12 13:34:11] ERROR Configure apiserver failed: yaml: did not find expected key
+[0m[32m[2024-10-12 13:34:11] INFO [Recovery] 2024/10/12 - 13:34:11 panic recovered:
+POST /api/v1/apiserver/configure HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 443
+Content-Type: application/json
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+
+
+yaml: did not find expected key
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x185f089)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x185eb5b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1398d16)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1366ff4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe20d40)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-10-12 13:35:11] ERROR unmarshal data [sudo] password for wangzhendong: apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubeadm.kubernetes.io/kube-apiserver.advertise-address.endpoint: 192.168.227.161:6443
+  creationTimestamp: null
+  labels:
+    component: kube-apiserver
+    tier: control-plane
+  name: kube-apiserver
+  namespace: kube-system
+spec:
+  containers:
+  - command:
+    - kube-apiserver
+    - --advertise-address=192.168.227.161
+    - --allow-privileged=true
+    - --audit-log-maxage=30
+    - --audit-log-maxbackup=10
+    - --audit-log-maxsize=100
+    - --authorization-mode=Node,RBAC
+    - --bind-address=0.0.0.0
+    - --client-ca-file=/etc/kubernetes/pki/ca.crt
+    - --enable-admission-plugins=NodeRestriction
+    - --enable-bootstrap-token-auth=true
+    - --etcd-cafile=/etc/ssl/etcd/ssl/ca.pem
+    - --etcd-certfile=/etc/ssl/etcd/ssl/node-node1.pem
+    - --etcd-keyfile=/etc/ssl/etcd/ssl/node-node1-key.pem
+    - --etcd-servers=https://192.168.227.161:2379
+    - --feature-gates=RotateKubeletServerCertificate=true,ExpandCSIVolumes=true,CSIStorageCapacity=true
+    - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+    - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
+    - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+    - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
+    - --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
+    - --requestheader-allowed-names=front-proxy-client
+    - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+    - --requestheader-extra-headers-prefix=X-Remote-Extra-
+    - --requestheader-group-headers=X-Remote-Group
+    - --requestheader-username-headers=X-Remote-User
+    - --secure-port=6443
+    - --service-account-issuer=https://kubernetes.default.svc.cluster.local
+    - --service-account-key-file=/etc/kubernetes/pki/sa.pub
+    - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
+    - --service-cluster-ip-range=10.233.0.0/18
+    - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
+    - --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+    - --oidc-issuer-url=https://keycloak.kmpp.io/auth/realms/cars
+    - --oidc-client-id=kubernetes
+    - --oidc-username-claim=name
+    - --oidc-username-prefix=-
+    - --oidc-groups-claim=groups
+    - --oidc-ca-file=/etc/kubernetes/pki/keycloak.crt
+    image: dockerhub.kubekey.local/carsio/kube-apiserver:v1.24.9
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 8
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    name: kube-apiserver
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        host: 192.168.227.161
+        path: /readyz
+        port: 6443
+        scheme: HTTPS
+      periodSeconds: 1
+      timeoutSeconds: 15
+    resources:
+      requests:
+        cpu: 250m
+    startupProbe:
+      failureThreshold: 24
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    volumeMounts:
+    - mountPath: /etc/ssl/certs
+      name: ca-certs
+      readOnly: true
+    - mountPath: /etc/pki
+      name: etc-pki
+      readOnly: true
+    - mountPath: /etc/ssl/etcd/ssl
+      name: etcd-certs-0
+      readOnly: true
+    - mountPath: /etc/kubernetes/pki
+      name: k8s-certs
+      readOnly: true
+    - mountPath: /usr/share/ca-certificates
+      name: usr-share-ca-certificates
+      readOnly: true
+  hostNetwork: true
+  priorityClassName: system-node-critical
+  securityContext:
+    seccompProfile:
+      type: RuntimeDefault
+  volumes:
+  - hostPath:
+      path: /etc/ssl/certs
+      type: DirectoryOrCreate
+    name: ca-certs
+  - hostPath:
+      path: /etc/pki
+      type: DirectoryOrCreate
+    name: etc-pki
+  - hostPath:
+      path: /etc/ssl/etcd/ssl
+      type: DirectoryOrCreate
+    name: etcd-certs-0
+  - hostPath:
+      path: /etc/kubernetes/pki
+      type: DirectoryOrCreate
+    name: k8s-certs
+  - hostPath:
+      path: /usr/share/ca-certificates
+      type: DirectoryOrCreate
+    name: usr-share-ca-certificates
+status: {}
+
+ failed
+[0m[31m[2024-10-12 13:35:38] ERROR Failed to configure apiserver node1: yaml: did not find expected key
+[0m[31m[2024-10-12 13:35:49] ERROR Configure apiserver failed: yaml: did not find expected key
+[0m[32m[2024-10-12 13:35:49] INFO [Recovery] 2024/10/12 - 13:35:49 panic recovered:
+POST /api/v1/apiserver/configure HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 443
+Content-Type: application/json
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+
+
+yaml: did not find expected key
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x185f089)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x185eb5b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1398d16)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1366ff4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe20d40)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-10-12 13:44:38] ERROR unmarshal data [sudo] password for wangzhendong: apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubeadm.kubernetes.io/kube-apiserver.advertise-address.endpoint: 192.168.227.161:6443
+  creationTimestamp: null
+  labels:
+    component: kube-apiserver
+    tier: control-plane
+  name: kube-apiserver
+  namespace: kube-system
+spec:
+  containers:
+  - command:
+    - kube-apiserver
+    - --advertise-address=192.168.227.161
+    - --allow-privileged=true
+    - --audit-log-maxage=30
+    - --audit-log-maxbackup=10
+    - --audit-log-maxsize=100
+    - --authorization-mode=Node,RBAC
+    - --bind-address=0.0.0.0
+    - --client-ca-file=/etc/kubernetes/pki/ca.crt
+    - --enable-admission-plugins=NodeRestriction
+    - --enable-bootstrap-token-auth=true
+    - --etcd-cafile=/etc/ssl/etcd/ssl/ca.pem
+    - --etcd-certfile=/etc/ssl/etcd/ssl/node-node1.pem
+    - --etcd-keyfile=/etc/ssl/etcd/ssl/node-node1-key.pem
+    - --etcd-servers=https://192.168.227.161:2379
+    - --feature-gates=RotateKubeletServerCertificate=true,ExpandCSIVolumes=true,CSIStorageCapacity=true
+    - --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+    - --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
+    - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+    - --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
+    - --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
+    - --requestheader-allowed-names=front-proxy-client
+    - --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+    - --requestheader-extra-headers-prefix=X-Remote-Extra-
+    - --requestheader-group-headers=X-Remote-Group
+    - --requestheader-username-headers=X-Remote-User
+    - --secure-port=6443
+    - --service-account-issuer=https://kubernetes.default.svc.cluster.local
+    - --service-account-key-file=/etc/kubernetes/pki/sa.pub
+    - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
+    - --service-cluster-ip-range=10.233.0.0/18
+    - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
+    - --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+    - --oidc-issuer-url=https://keycloak.kmpp.io/auth/realms/cars
+    - --oidc-client-id=kubernetes
+    - --oidc-username-claim=name
+    - --oidc-username-prefix=-
+    - --oidc-groups-claim=groups
+    - --oidc-ca-file=/etc/kubernetes/pki/keycloak.crt
+    image: dockerhub.kubekey.local/carsio/kube-apiserver:v1.24.9
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 8
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    name: kube-apiserver
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        host: 192.168.227.161
+        path: /readyz
+        port: 6443
+        scheme: HTTPS
+      periodSeconds: 1
+      timeoutSeconds: 15
+    resources:
+      requests:
+        cpu: 250m
+    startupProbe:
+      failureThreshold: 24
+      httpGet:
+        host: 192.168.227.161
+        path: /livez
+        port: 6443
+        scheme: HTTPS
+      initialDelaySeconds: 10
+      periodSeconds: 10
+      timeoutSeconds: 15
+    volumeMounts:
+    - mountPath: /etc/ssl/certs
+      name: ca-certs
+      readOnly: true
+    - mountPath: /etc/pki
+      name: etc-pki
+      readOnly: true
+    - mountPath: /etc/ssl/etcd/ssl
+      name: etcd-certs-0
+      readOnly: true
+    - mountPath: /etc/kubernetes/pki
+      name: k8s-certs
+      readOnly: true
+    - mountPath: /usr/share/ca-certificates
+      name: usr-share-ca-certificates
+      readOnly: true
+  hostNetwork: true
+  priorityClassName: system-node-critical
+  securityContext:
+    seccompProfile:
+      type: RuntimeDefault
+  volumes:
+  - hostPath:
+      path: /etc/ssl/certs
+      type: DirectoryOrCreate
+    name: ca-certs
+  - hostPath:
+      path: /etc/pki
+      type: DirectoryOrCreate
+    name: etc-pki
+  - hostPath:
+      path: /etc/ssl/etcd/ssl
+      type: DirectoryOrCreate
+    name: etcd-certs-0
+  - hostPath:
+      path: /etc/kubernetes/pki
+      type: DirectoryOrCreate
+    name: k8s-certs
+  - hostPath:
+      path: /usr/share/ca-certificates
+      type: DirectoryOrCreate
+    name: usr-share-ca-certificates
+status: {}
+
+ failed
+[0m[31m[2024-10-12 13:44:38] ERROR Failed to configure apiserver node1: yaml: did not find expected key
+[0m[31m[2024-10-12 13:44:38] ERROR Configure apiserver failed: yaml: did not find expected key
+[0m[32m[2024-10-12 13:44:38] INFO [Recovery] 2024/10/12 - 13:44:38 panic recovered:
+POST /api/v1/apiserver/configure HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 443
+Content-Type: application/json
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+
+
+yaml: did not find expected key
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x185f089)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x185eb5b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1398d16)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1366ff4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe20d40)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

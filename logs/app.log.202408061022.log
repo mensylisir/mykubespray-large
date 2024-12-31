@@ -1,0 +1,75 @@
+[32m[2024-08-06 10:22:30] INFO 
+
+[0m[32m[2024-08-06 10:22:30] INFO 
+
+[0m[31m[2024-08-06 10:22:30] ERROR 10:22:26 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-08-06 10:22:30] INFO  _   __      _          _   __           
+
+[0m[32m[2024-08-06 10:22:30] INFO | | / /     | |        | | / /           
+
+[0m[32m[2024-08-06 10:22:30] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-08-06 10:22:30] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-08-06 10:22:30] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-08-06 10:22:30] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-08-06 10:22:30] INFO                                     __/ |
+
+[0m[32m[2024-08-06 10:22:30] INFO                                    |___/
+
+[0m[32m[2024-08-06 10:22:30] INFO 
+
+[0m[31m[2024-08-06 10:22:33] ERROR 10:22:29 CST message: [registry]
+
+[0m[31m[2024-08-06 10:22:33] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-06 10:22:33] ERROR 10:22:29 CST failed: [node1]
+
+[0m[31m[2024-08-06 10:22:33] ERROR 10:22:29 CST success: [registry]
+
+[0m[32m[2024-08-06 10:22:33] INFO 
+[0m[31m[2024-08-06 10:22:33] ERROR error: Pipeline[CreateClusterPipeline] execute failed: Module[GreetingsModule] exec failed: 
+
+[0m[31m[2024-08-06 10:22:33] ERROR failed: [node1] failed to connect to 192.168.227.145: could not establish connection to 192.168.227.145:22: dial tcp 192.168.227.145:22: connect: no route to host
+
+[0m[32m[2024-08-06 10:23:00] INFO 
+
+[0m[32m[2024-08-06 10:23:00] INFO 
+
+[0m[31m[2024-08-06 10:23:00] ERROR 10:22:56 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-08-06 10:23:00] INFO  _   __      _          _   __           
+
+[0m[32m[2024-08-06 10:23:00] INFO | | / /     | |        | | / /           
+
+[0m[32m[2024-08-06 10:23:00] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-08-06 10:23:00] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-08-06 10:23:00] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-08-06 10:23:00] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-08-06 10:23:00] INFO                                     __/ |
+
+[0m[32m[2024-08-06 10:23:00] INFO                                    |___/
+
+[0m[32m[2024-08-06 10:23:00] INFO 
+
+[0m[31m[2024-08-06 10:23:03] ERROR 10:23:00 CST message: [registry]
+
+[0m[31m[2024-08-06 10:23:03] ERROR Greetings, KubeKey!
+
+[0m[31m[2024-08-06 10:23:03] ERROR 10:23:00 CST failed: [node1]
+
+[0m[31m[2024-08-06 10:23:03] ERROR 10:23:00 CST success: [registry]
+
+[0m[31m[2024-08-06 10:23:03] ERROR error: Pipeline[CreateClusterPipeline] execute failed: Module[GreetingsModule] exec failed: 
+
+[0m[31m[2024-08-06 10:23:03] ERROR failed: [node1] failed to connect to 192.168.227.145: could not establish connection to 192.168.227.145:22: dial tcp 192.168.227.145:22: connect: no route to host
+
+[0m[32m[2024-08-06 10:23:03] INFO 
+[0m

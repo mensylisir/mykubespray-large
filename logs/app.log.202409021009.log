@@ -1,0 +1,34 @@
+[31m[2024-09-02 10:10:22] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[31m[2024-09-02 10:10:22] ERROR add hosts failed: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-09-02 10:10:22] INFO [Recovery] 2024/09/02 - 10:10:22 panic recovered:
+ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x14467c9)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x144629b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x9e1a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x9b0094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x4bebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-02 10:11:31] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[31m[2024-09-02 10:11:31] ERROR add hosts failed: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-09-02 10:11:31] INFO [Recovery] 2024/09/02 - 10:11:31 panic recovered:
+ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x14467c9)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x144629b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x9e1a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x9b0094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x4bebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-02 10:14:25] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-09-02 10:14:35] INFO 
+[0m

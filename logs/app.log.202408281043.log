@@ -1,0 +1,33 @@
+[31m[2024-08-28 11:08:45] ERROR pvcreate failed: Process exited with status 5
+[0m[31m[2024-08-28 11:08:45] ERROR Failed to create pv: Process exited with status 5
+[0m[31m[2024-08-28 11:08:45] ERROR Mount disk failed: Process exited with status 5
+[0m[32m[2024-08-28 11:08:45] INFO [Recovery] 2024/08/28 - 11:08:45 panic recovered:
+Process exited with status 5
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/errorx/errorx.go:40 (0x1f55d69)
+	Dangerous: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/ginx/errorx.go:10 (0x1f79130)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/controller/os.go:38 (0x1fad72d)
+	MountDisk: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1f369b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/logrus.go:62 (0x1f93465)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1f369b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/recovery.go:94 (0x1f916b8)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1f369b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1f46689)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1f4615b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x14e1a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x14b0094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xfbebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

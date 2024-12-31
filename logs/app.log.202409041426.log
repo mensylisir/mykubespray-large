@@ -1,0 +1,29 @@
+[31m[2024-09-04 14:26:37] ERROR Faile to install or update chart release: must either provide a name or specify --generate-name
+[0m[31m[2024-09-04 14:26:37] ERROR Error Add helm repo to kubernetes: must either provide a name or specify --generate-name
+[0m[32m[2024-09-04 14:26:37] INFO {{0 2024-09-04 14:26:06.9931113 +0800 CST m=+2.642854001 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431197 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:26:37] INFO 
+[0m[31m[2024-09-04 14:26:37] ERROR Faile to install or update chart release: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[31m[2024-09-04 14:26:37] ERROR Error Add helm repo to kubernetes: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[32m[2024-09-04 14:26:37] INFO {{0 2024-09-04 14:26:36.514153 +0800 CST m=+32.163895701 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431197 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:26:37] INFO 
+[0m[31m[2024-09-04 14:26:44] ERROR Faile to install or update chart release: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[31m[2024-09-04 14:26:44] ERROR Error Add helm repo to kubernetes: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[32m[2024-09-04 14:26:44] INFO {{0 2024-09-04 14:26:40.1556672 +0800 CST m=+35.805409901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431204 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:26:44] INFO 
+[0m[31m[2024-09-04 14:27:14] ERROR Faile to install or update chart release: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[31m[2024-09-04 14:27:34] ERROR Error Add helm repo to kubernetes: chart "nginx" matching >0.0.0-0 not found in myrepo index. (try 'helm repo update'): no chart name found
+[0m[32m[2024-09-04 14:28:26] INFO {{0 2024-09-04 14:27:03.26713 +0800 CST m=+58.916872701 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431306 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:28:26] INFO 
+[0m[32m[2024-09-04 14:28:45] INFO creating 1 resource(s)
+[0m[32m[2024-09-04 14:28:46] INFO creating 50 resource(s)
+[0m[31m[2024-09-04 14:28:47] ERROR Faile to install or update chart release: 1 error occurred:
+	* namespaces "argocd-system" not found
+
+
+[0m[31m[2024-09-04 14:28:56] ERROR Error Add helm repo to kubernetes: 1 error occurred:
+	* namespaces "argocd-system" not found
+
+
+[0m[32m[2024-09-04 14:29:03] INFO {{0 2024-09-04 14:28:34.2773432 +0800 CST m=+149.927085901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431343 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:29:03] INFO 
+[0m

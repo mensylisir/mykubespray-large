@@ -1,0 +1,34 @@
+[32m[2024-08-19 12:43:51] INFO [Recovery] 2024/08/19 - 12:43:51 panic recovered:
+interface conversion: interface {} is []interface {}, not []string
+C:/Program Files/Go/src/runtime/iface.go:275 (0x6effe4)
+	panicdottypeE: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/utils/apiserver.go:71 (0x1737cdd)
+	updateCommandInContainer: if command, ok := container["command"].([]interface{}); ok {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/utils/apiserver.go:36 (0x1736ef4)
+	(*ApiServerClient).ModifyConfig: "--oidc-issuer-url=https://keycloak.kmpp.io/auth/realms/cars",
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/service/apiserver.go:38 (0x1744724)
+	apiServerService.ConfigureManifest: if err != nil {
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/controller/apiserver.go:35 (0x1747e3c)
+	ConfigureApiServer: if err != nil {
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x16d6a39)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/logrus.go:62 (0x17334e5)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x16d6a39)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/recovery.go:94 (0x1731738)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x16d6a39)
+	(*Context).Next: c.index++
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x16e6709)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x16e61db)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0xc81a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0xc50094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x75ebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

@@ -1,0 +1,58 @@
+[32m[2024-10-11 14:06:12] INFO Remote output: PRETTY_NAME="UOS Server 20"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: NAME="UOS Server 20"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: VERSION_ID="20"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: VERSION="20"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: ID=uos
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: HOME_URL="https://www.chinauos.com/"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: BUG_REPORT_URL="https://bbs.chinauos.com/"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: VERSION_CODENAME=fuyu
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: PLATFORM_ID="platform:uel20"
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: x86_64
+[0m[32m[2024-10-11 14:06:12] INFO Remote output:  12th Gen Intel(R) Core(TM) i9-12900T
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: 2
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: 3735
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: 70G
+[0m[32m[2024-10-11 14:06:12] INFO Remote output: lo
+[0m[32m[2024-10-11 14:06:13] INFO Remote output: ens33
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: br
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: br
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: docker0
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: br
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: br
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth1bba4eb
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth53ba1ed
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth3059e98
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethbf188f0
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethb4a4d61
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethcc2e818
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth6d255f3
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth9568652
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth057bb2c
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethf9a4341
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethdd97970
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethdadd5d3
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vetha1c62c1
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethd1d43e7
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vetheaf403a
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethd1f1be2
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethf6f3043
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth19ab246
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: vethf8a728f
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: veth1630930
+[0m[32m[2024-10-11 14:06:14] INFO Remote output: wangzhendong
+[0m[32m[2024-10-11 14:06:25] INFO Remote output: [sudo] password for wangzhendong: Sorry, try again.
+[0m[31m[2024-10-11 14:06:25] ERROR Failed to execute command: Process exited with status 1
+[0m[32m[2024-10-11 14:06:36] INFO Remote output: [sudo] password for wangzhendong: 
+[0m[31m[2024-10-11 14:06:36] ERROR Failed to generate dir /home/wangzhendong/taichu/wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 14:06:43] INFO Remote output: sudo: no password was provided
+[0m[32m[2024-10-11 14:06:46] INFO Remote output: sudo: 1 incorrect password attempt
+[0m[32m[2024-10-11 14:06:50] INFO error: Unable to open the given cluster configuration file: open /home/wangzhendong/homewangzhendongtaichuwangclusterconfig-sample.yaml: no such file or directory
+
+[0m[31m[2024-10-11 14:06:50] ERROR SSH command execution failed: Process exited with status 1
+[0m[31m[2024-10-11 14:06:50] ERROR Failed to delete cluster wangcluster: Process exited with status 1
+[0m[31m[2024-10-11 14:06:50] ERROR Pipeline Done
+
+[0m[32m[2024-10-11 14:06:50] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 44.8545495s | IP: 127.0.0.1
+
+[0m[32m[2024-10-11 14:06:50] INFO {{0 2024-10-11 14:06:05.9374476 +0800 CST m=+5.129042401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728626810 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

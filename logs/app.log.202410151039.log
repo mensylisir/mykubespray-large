@@ -1,0 +1,4 @@
+[32m[2024-10-15 10:39:07] INFO Method: POST | Path: /api/v1/apiserver/configure | Status: 200 | Duration: 2.3472556s | IP: ::1
+
+[0m[32m[2024-10-15 10:39:07] INFO {{0 2024-10-15 10:39:05.0684195 +0800 CST m=+4.000115401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728959947 /api/v1/apiserver/configure /api/v1/apiserver/configure example_module POST No description available for this endpoint.}
+[0m

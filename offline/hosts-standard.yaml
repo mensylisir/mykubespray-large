@@ -1,0 +1,25 @@
+all:
+  hosts:
+    node1:
+      ansible_host: 192.168.227.143
+      ansible_port: 22
+      ip: 192.168.227.143
+      access_ip: 192.168.227.143
+      ansible_user: root
+      ansible_ssh_pass: xiaoming98
+  children:
+    kube_control_plane:
+      hosts:
+        node1:
+    kube_node:
+      hosts:
+        node1:
+    etcd:
+      hosts:
+        node1:
+    k8s_cluster:
+      children:
+        kube_control_plane:
+        kube_node:
+    calico_rr:
+      hosts: {}

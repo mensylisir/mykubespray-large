@@ -1,0 +1,55 @@
+[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get os arch: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get cpu info: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get cpu cores: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get memory info: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get disk size: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to get netcard list: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to generate dir \home\wangzhendong\taichu\wangcluster: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create SSH session: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:12:50] ERROR Failed to create cluster wangcluster: read tcp 192.168.227.1:59097->192.168.227.160:22: use of closed network connection
+[0m[32m[2024-09-03 14:12:50] INFO {{0 2024-09-03 14:12:49.0218613 +0800 CST m=+42.534637001 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725343970 /api/ws/v1/cluster/create /api/ws/v1/cluster/create example_module GET No description available for this endpoint.}
+[0m[32m[2024-09-03 14:12:50] INFO 
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get os arch: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get cpu info: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get cpu cores: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get memory info: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get disk size: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to get netcard list: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to generate dir \home\wangzhendong\taichu\wangcluster: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create SSH session: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:10] ERROR Failed to create cluster wangcluster: read tcp 192.168.227.1:59134->192.168.227.160:22: use of closed network connection
+[0m[32m[2024-09-03 14:14:10] INFO {{0 2024-09-03 14:14:08.9682607 +0800 CST m=+122.481036401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725344050 /api/ws/v1/cluster/create /api/ws/v1/cluster/create example_module GET No description available for this endpoint.}
+[0m[32m[2024-09-03 14:14:10] INFO 
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get os arch: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get cpu info: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get cpu cores: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get memory info: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get disk size: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to get netcard list: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to generate dir \home\wangzhendong\taichu\wangcluster: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create SSH session: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[31m[2024-09-03 14:14:46] ERROR Failed to create cluster wangcluster: read tcp 192.168.227.1:59153->192.168.227.160:22: use of closed network connection
+[0m[32m[2024-09-03 14:14:46] INFO {{0 2024-09-03 14:14:44.8827012 +0800 CST m=+158.395476901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725344086 /api/ws/v1/cluster/create /api/ws/v1/cluster/create example_module GET No description available for this endpoint.}
+[0m[32m[2024-09-03 14:14:46] INFO 
+[0m

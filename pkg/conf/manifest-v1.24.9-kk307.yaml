@@ -1,0 +1,114 @@
+apiVersion: kubekey.kubesphere.io/v1alpha2
+kind: Manifest
+metadata:
+  name: sample
+spec:
+  arches:
+    - arm64
+    - amd64
+  operatingSystems:
+    - arch: amd64
+      type: linux
+      id: uos
+      version: "20"
+      osImage: UOS Server 20
+      repository:
+        iso:
+          localPath: /root/uos/rpms/uos20-amd64-rpms.iso
+    - arch: arm64
+      type: linux
+      id: uos
+      version: "20"
+      osImage: UOS Server 20
+      repository:
+        iso:
+          localPath: /root/uos/rpms/uos20-arm64-rpms.iso
+    - arch: amd64
+      type: linux
+      id: kylin
+      version: "v10sp3"
+      osImage: kylin v10 sp3
+      repository:
+        iso:
+          localPath: /root/uos/rpms/kylinv10sp3-amd64-rpms.iso
+    - arch: arm64
+      type: linux
+      id: kylin
+      version: "v10sp3"
+      osImage: kylin v10 sp3
+      repository:
+        iso:
+          localPath: /root/uos/rpms/kylinv10sp3-arm64-rpms.iso
+    - arch: amd64
+      type: linux
+      id: centos
+      version: "7"
+      osImage: centos7
+      repository:
+        iso:
+          localPath: /root/uos/rpms/centos7-rpms-amd64.iso
+    - arch: arm64
+      type: linux
+      id: centos
+      version: "7"
+      osImage: centos7
+      repository:
+        iso:
+          localPath: /root/uos/rpms/centos7-rpms-arm64.iso
+    - arch: amd64
+      type: linux
+      id: ubuntu
+      version: "22.04"
+      osImage: ubuntu 22.04
+      repository:
+        iso:
+          localPath: /root/uos/rpms/ubuntu-22.04-debs-amd64.iso
+    - arch: arm64
+      type: linux
+      id: ubuntu
+      version: "22.04"
+      osImage: ubuntu 22.04
+      repository:
+        iso:
+          localPath: /root/uos/rpms/ubuntu-22.04-debs-arm64.iso
+  kubernetesDistributions:
+    - type: kubernetes
+      version: v1.24.9
+  components:
+    helm:
+      version: v3.9.0
+    cni:
+      version: v0.9.1
+    etcd:
+      version: v3.4.13
+    containerRuntimes:
+      - type: docker
+        version: 20.10.8
+      - type: containerd
+        version: 1.6.4
+    calicoctl:
+      version: v3.23.2
+    crictl:
+      version: v1.24.0
+    docker-registry:
+      version: "2"
+    harbor:
+      version: v2.5.3
+    docker-compose:
+      version: v2.26.1
+  images:
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.23.2
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.6
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy:2.3
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.15.12
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.24.9
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.24.9
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.23.2
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.24.9
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.24.9
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.23.2
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.7
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.23.2
+    - registry.cn-beijing.aliyuncs.com/kubesphereio/typha:v3.23.2
+  registry:
+    auths: {}

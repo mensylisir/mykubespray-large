@@ -1,0 +1,17 @@
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: JoinConfiguration
+discovery:
+  bootstrapToken:
+    apiServerEndpoint: lb.kubesphere.local:6443
+    token: "wf7f5p.z44gbnp4x8lfvx7r"
+    unsafeSkipCAVerification: true
+  tlsBootstrapToken: "wf7f5p.z44gbnp4x8lfvx7r"
+controlPlane:
+  localAPIEndpoint:
+    advertiseAddress: 172.30.1.14
+    bindPort: 6443
+  certificateKey: a4da29ebe04a5ad45c9fe46202d7917210ec2bb1c5a5d9a90af76239a12b8ef6
+nodeRegistration:
+  criSocket: unix:///run/containerd/containerd.sock
+  kubeletExtraArgs:
+    cgroup-driver: systemd

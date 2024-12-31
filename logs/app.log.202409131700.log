@@ -1,0 +1,30 @@
+[31m[2024-09-13 17:01:12] ERROR failed to create group: 409
+[0m[31m[2024-09-13 17:01:12] ERROR Creating group failed: failed to  create group: 409 Conflict
+[0m[31m[2024-09-13 17:01:12] ERROR Create group failed: failed to  create group: 409 Conflict
+[0m[32m[2024-09-13 17:01:12] INFO [Recovery] 2024/09/13 - 17:01:12 panic recovered:
+POST /api/v1/keycloak/group HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 252
+Content-Type: application/json
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+
+
+failed to  create group: 409 Conflict
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc11d44)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc11891)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x8f2dcd)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x8d22ef)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x5d8d00)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-13 17:01:27] INFO Method: POST | Path: /api/v1/keycloak/group | Status: 200 | Duration: 47.5532ms | IP: ::1
+
+[0m[32m[2024-09-13 17:01:27] INFO {{0 2024-09-13 17:01:27.3369382 +0800 CST m=+28.955693901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1726218087 /api/v1/keycloak/group /api/v1/keycloak/group example_module POST No description available for this endpoint.}
+[0m

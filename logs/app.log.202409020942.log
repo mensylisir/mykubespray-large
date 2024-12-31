@@ -1,0 +1,31 @@
+[31m[2024-09-02 10:08:37] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[31m[2024-09-02 10:08:37] ERROR add hosts failed: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-09-02 10:08:37] INFO [Recovery] 2024/09/02 - 10:08:37 panic recovered:
+ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x18b4364)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x18b3eb1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x122e20d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x120daef)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xf46e80)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-02 10:08:51] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[31m[2024-09-02 10:08:51] ERROR add hosts failed: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-09-02 10:08:51] INFO [Recovery] 2024/09/02 - 10:08:51 panic recovered:
+ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x18b4364)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x18b3eb1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x122e20d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x120daef)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xf46e80)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

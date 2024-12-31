@@ -1,0 +1,34 @@
+[31m[2024-10-12 11:00:02] ERROR Failed to create temp destination file: permission denied
+[0m[31m[2024-10-12 11:00:02] ERROR Failed to create temp destination file: permission denied
+[0m[31m[2024-10-12 11:00:02] ERROR Failed to create temp destination file: permission denied
+[0m[31m[2024-10-12 11:00:02] ERROR Failed to copy file to 192.168.227.162: Failed to copy file to 192.168.227.162: permission denied
+
+[0m[31m[2024-10-12 11:00:02] ERROR Failed to copy file to 192.168.227.160: Failed to copy file to 192.168.227.160: permission denied
+
+[0m[31m[2024-10-12 11:00:02] ERROR Failed to copy file to 192.168.227.161: Failed to copy file to 192.168.227.161: permission denied
+
+[0m[31m[2024-10-12 11:00:02] ERROR Copy keycloak certificate failed: add keycloak cert failed
+[0m[32m[2024-10-12 11:00:02] INFO [Recovery] 2024/10/12 - 11:00:02 panic recovered:
+POST /api/v1/server/cert/copyparallel HTTP/1.1
+Host: localhost:8080
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 686
+Content-Type: application/json
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+
+
+add keycloak cert failed
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x112f089)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x112eb5b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0xc68d16)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0xc36ff4)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x6f0d40)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

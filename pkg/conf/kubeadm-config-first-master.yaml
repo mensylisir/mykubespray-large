@@ -1,0 +1,122 @@
+---
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: ClusterConfiguration
+etcd:
+  external:
+    endpoints:
+      - https://172.30.1.12:2379
+      - https://172.30.1.14:2379
+      - https://172.30.1.15:2379
+    caFile: /etc/ssl/etcd/ssl/ca.pem
+    certFile: /etc/ssl/etcd/ssl/node-node2.pem
+    keyFile: /etc/ssl/etcd/ssl/node-node2-key.pem
+dns:
+  type: CoreDNS
+  imageRepository: dockerhub.kubekey.local/kubesphereio
+  imageTag: 1.8.6
+imageRepository: dockerhub.kubekey.local/kubesphereio
+kubernetesVersion: v1.24.9
+certificatesDir: /etc/kubernetes/pki
+clusterName: cluster.local
+controlPlaneEndpoint: lb.kubesphere.local:6443
+networking:
+  dnsDomain: cluster.local
+  podSubnet: 10.233.64.0/18
+  serviceSubnet: 10.233.0.0/18
+apiServer:
+  extraArgs:
+    audit-log-maxage: "30"
+    audit-log-maxbackup: "10"
+    audit-log-maxsize: "100"
+    bind-address: 0.0.0.0
+    feature-gates: RotateKubeletServerCertificate=true,ExpandCSIVolumes=true,CSIStorageCapacity=true
+  certSANs:
+    - kubernetes
+    - kubernetes.default
+    - kubernetes.default.svc
+    - kubernetes.default.svc.cluster.local
+    - localhost
+    - 127.0.0.1
+    - lb.kubesphere.local
+    - 172.30.1.12
+    - node1
+    - node1.cluster.local
+    - 172.30.1.13
+    - node2
+    - node2.cluster.local
+    - node3
+    - node3.cluster.local
+    - 172.30.1.14
+    - node4
+    - node4.cluster.local
+    - 172.30.1.15
+    - node5
+    - node5.cluster.local
+    - 172.30.1.16
+    - 10.233.0.1
+controllerManager:
+  extraArgs:
+    node-cidr-mask-size: "24"
+    bind-address: 0.0.0.0
+    cluster-signing-duration: 87600h
+    feature-gates: ExpandCSIVolumes=true,CSIStorageCapacity=true,RotateKubeletServerCertificate=true
+  extraVolumes:
+    - name: host-time
+      hostPath: /etc/localtime
+      mountPath: /etc/localtime
+      readOnly: true
+scheduler:
+  extraArgs:
+    bind-address: 0.0.0.0
+    feature-gates: ExpandCSIVolumes=true,CSIStorageCapacity=true,RotateKubeletServerCertificate=true
+
+---
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: 172.30.1.12
+  bindPort: 6443
+nodeRegistration:
+  criSocket: unix:///run/containerd/containerd.sock
+  kubeletExtraArgs:
+    cgroup-driver: systemd
+---
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+kind: KubeProxyConfiguration
+clusterCIDR: 10.233.64.0/18
+iptables:
+  masqueradeAll: false
+  masqueradeBit: 14
+  minSyncPeriod: 0s
+  syncPeriod: 30s
+mode: ipvs
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+clusterDNS:
+  - 169.254.25.10
+clusterDomain: cluster.local
+containerLogMaxFiles: 3
+containerLogMaxSize: 5Mi
+evictionHard:
+  memory.available: 5%
+  pid.available: 10%
+evictionMaxPodGracePeriod: 120
+evictionPressureTransitionPeriod: 30s
+evictionSoft:
+  memory.available: 10%
+evictionSoftGracePeriod:
+  memory.available: 2m
+featureGates:
+  CSIStorageCapacity: true
+  ExpandCSIVolumes: true
+  RotateKubeletServerCertificate: true
+kubeReserved:
+  cpu: 200m
+  memory: 250Mi
+maxPods: 110
+podPidsLimit: 10000
+rotateCertificates: true
+systemReserved:
+  cpu: 200m
+  memory: 250Mi

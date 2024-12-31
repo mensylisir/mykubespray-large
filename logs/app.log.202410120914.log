@@ -1,0 +1,147 @@
+[32m[2024-10-12 09:14:36] INFO Mkdir Directory: /home/wangzhendong/taichu/wang1cluster
+[0m[32m[2024-10-12 09:15:12] INFO 
+
+[0m[32m[2024-10-12 09:15:12] INFO 
+
+[0m[32m[2024-10-12 09:15:12] INFO  _   __      _          _   __           
+
+[0m[32m[2024-10-12 09:15:12] INFO | | / /     | |        | | / /           
+
+[0m[32m[2024-10-12 09:15:12] INFO 09:15:15 CST [GreetingsModule] Greetings
+
+[0m[32m[2024-10-12 09:15:12] INFO | |/ / _   _| |__   ___| |/ /  ___ _   _ 
+
+[0m[32m[2024-10-12 09:15:12] INFO |    \| | | | '_ \ / _ \    \ / _ \ | | |
+
+[0m[32m[2024-10-12 09:15:12] INFO | |\  \ |_| | |_) |  __/ |\  \  __/ |_| |
+
+[0m[32m[2024-10-12 09:15:12] INFO \_| \_/\__,_|_.__/ \___\_| \_/\___|\__, |
+
+[0m[32m[2024-10-12 09:15:12] INFO                                     __/ |
+
+[0m[32m[2024-10-12 09:15:12] INFO                                    |___/
+
+[0m[32m[2024-10-12 09:15:12] INFO 
+
+[0m[32m[2024-10-12 09:15:12] INFO 09:15:15 CST message: [registry]
+
+[0m[32m[2024-10-12 09:15:12] INFO Greetings, KubeKey!
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST message: [node1]
+
+[0m[32m[2024-10-12 09:15:13] INFO Greetings, KubeKey!
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST success: [registry]
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST [DeleteClusterConfirmModule] Display confirmation form
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST success: [LocalHost]
+
+[0m[32m[2024-10-12 09:15:13] INFO 09:15:15 CST [ResetClusterModule] Reset the cluster using kubeadm
+
+[0m[32m[2024-10-12 09:15:17] INFO 09:15:20 CST stdout: [node1]
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Reading configuration from the cluster...
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -o yaml'
+
+[0m[32m[2024-10-12 09:15:17] INFO W1012 09:15:16.272000   19524 utils.go:69] The recommended value for "clusterDNS" in "KubeletConfiguration" is: [10.233.0.10]; the provided value is: [169.254.25.10]
+
+[0m[32m[2024-10-12 09:15:17] INFO [preflight] Running pre-flight checks
+
+[0m[32m[2024-10-12 09:15:17] INFO W1012 09:15:16.289921   19524 removeetcdmember.go:84] [reset] No kubeadm config, using etcd pod spec to get data directory
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] No etcd config found. Assuming external etcd
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Please, manually reset etcd to prevent further issues
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Stopping the kubelet service
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Unmounting mounted directories in "/var/lib/kubelet"
+
+[0m[32m[2024-10-12 09:15:17] INFO W1012 09:15:20.696900   19524 cleanupnode.go:93] [reset] Failed to remove containers: [failed to stop running pod 54c6dcddb579cb9faf7b08e0606e41f3142243784c4db89ac5ad33553d26cf00: output: E1012 09:15:20.535300   20859 remote_runtime.go:248] "StopPodSandbox from runtime service failed" err="rpc error: code = Unknown desc = failed to destroy network for sandbox \"54c6dcddb579cb9faf7b08e0606e41f3142243784c4db89ac5ad33553d26cf00\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused" podSandboxID="54c6dcddb579cb9faf7b08e0606e41f3142243784c4db89ac5ad33553d26cf00"
+
+[0m[32m[2024-10-12 09:15:17] INFO time="2024-10-12T09:15:20+08:00" level=fatal msg="stopping the pod sandbox \"54c6dcddb579cb9faf7b08e0606e41f3142243784c4db89ac5ad33553d26cf00\": rpc error: code = Unknown desc = failed to destroy network for sandbox \"54c6dcddb579cb9faf7b08e0606e41f3142243784c4db89ac5ad33553d26cf00\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused"
+
+[0m[32m[2024-10-12 09:15:17] INFO , error: exit status 1, failed to stop running pod b89b96852806bdec730947fb1346b96e1e6d26e20352a835a6a01644364d6486: output: E1012 09:15:20.557548   20882 remote_runtime.go:248] "StopPodSandbox from runtime service failed" err="rpc error: code = Unknown desc = failed to destroy network for sandbox \"b89b96852806bdec730947fb1346b96e1e6d26e20352a835a6a01644364d6486\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused" podSandboxID="b89b96852806bdec730947fb1346b96e1e6d26e20352a835a6a01644364d6486"
+
+[0m[32m[2024-10-12 09:15:17] INFO time="2024-10-12T09:15:20+08:00" level=fatal msg="stopping the pod sandbox \"b89b96852806bdec730947fb1346b96e1e6d26e20352a835a6a01644364d6486\": rpc error: code = Unknown desc = failed to destroy network for sandbox \"b89b96852806bdec730947fb1346b96e1e6d26e20352a835a6a01644364d6486\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused"
+
+[0m[32m[2024-10-12 09:15:17] INFO , error: exit status 1, failed to stop running pod 3523e8f24f955890a787f981dba96fc25ac614973e4edfa1ce94c5e8116b1c38: output: E1012 09:15:20.580285   20904 remote_runtime.go:248] "StopPodSandbox from runtime service failed" err="rpc error: code = Unknown desc = failed to destroy network for sandbox \"3523e8f24f955890a787f981dba96fc25ac614973e4edfa1ce94c5e8116b1c38\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused" podSandboxID="3523e8f24f955890a787f981dba96fc25ac614973e4edfa1ce94c5e8116b1c38"
+
+[0m[32m[2024-10-12 09:15:17] INFO time="2024-10-12T09:15:20+08:00" level=fatal msg="stopping the pod sandbox \"3523e8f24f955890a787f981dba96fc25ac614973e4edfa1ce94c5e8116b1c38\": rpc error: code = Unknown desc = failed to destroy network for sandbox \"3523e8f24f955890a787f981dba96fc25ac614973e4edfa1ce94c5e8116b1c38\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused"
+
+[0m[32m[2024-10-12 09:15:17] INFO , error: exit status 1, failed to stop running pod 05661f5b3bac157ac19093bf2626b68b1438727c21df03961162513a4b69612f: output: E1012 09:15:20.602329   20927 remote_runtime.go:248] "StopPodSandbox from runtime service failed" err="rpc error: code = Unknown desc = failed to destroy network for sandbox \"05661f5b3bac157ac19093bf2626b68b1438727c21df03961162513a4b69612f\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused" podSandboxID="05661f5b3bac157ac19093bf2626b68b1438727c21df03961162513a4b69612f"
+
+[0m[32m[2024-10-12 09:15:17] INFO time="2024-10-12T09:15:20+08:00" level=fatal msg="stopping the pod sandbox \"05661f5b3bac157ac19093bf2626b68b1438727c21df03961162513a4b69612f\": rpc error: code = Unknown desc = failed to destroy network for sandbox \"05661f5b3bac157ac19093bf2626b68b1438727c21df03961162513a4b69612f\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused"
+
+[0m[32m[2024-10-12 09:15:17] INFO , error: exit status 1, failed to stop running pod cccc1f848961fc171400f3b7626949b17fc0bbccd8c7ea86b27a3f9e4218743a: output: E1012 09:15:20.625029   20949 remote_runtime.go:248] "StopPodSandbox from runtime service failed" err="rpc error: code = Unknown desc = failed to destroy network for sandbox \"cccc1f848961fc171400f3b7626949b17fc0bbccd8c7ea86b27a3f9e4218743a\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused" podSandboxID="cccc1f848961fc171400f3b7626949b17fc0bbccd8c7ea86b27a3f9e4218743a"
+
+[0m[32m[2024-10-12 09:15:17] INFO time="2024-10-12T09:15:20+08:00" level=fatal msg="stopping the pod sandbox \"cccc1f848961fc171400f3b7626949b17fc0bbccd8c7ea86b27a3f9e4218743a\": rpc error: code = Unknown desc = failed to destroy network for sandbox \"cccc1f848961fc171400f3b7626949b17fc0bbccd8c7ea86b27a3f9e4218743a\": plugin type=\"calico\" failed (delete): error getting ClusterInformation: Get \"https://10.233.0.1:443/apis/crd.projectcalico.org/v1/clusterinformations/default\": dial tcp 10.233.0.1:443: connect: connection refused"
+
+[0m[32m[2024-10-12 09:15:17] INFO , error: exit status 1]
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Deleting contents of directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
+
+[0m[32m[2024-10-12 09:15:17] INFO [reset] Deleting contents of stateful directories: [/var/lib/kubelet /var/lib/dockershim /var/run/kubernetes /var/lib/cni]
+
+[0m[32m[2024-10-12 09:15:17] INFO 
+
+[0m[32m[2024-10-12 09:15:17] INFO The reset process does not clean CNI configuration. To do so, you must remove /etc/cni/net.d
+
+[0m[32m[2024-10-12 09:15:17] INFO 
+
+[0m[32m[2024-10-12 09:15:17] INFO The reset process does not reset or clean up iptables rules or IPVS tables.
+
+[0m[32m[2024-10-12 09:15:17] INFO If you wish to reset iptables, you must do so manually by using the "iptables" command.
+
+[0m[32m[2024-10-12 09:15:17] INFO 
+
+[0m[32m[2024-10-12 09:15:17] INFO If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
+
+[0m[32m[2024-10-12 09:15:17] INFO to reset your system's IPVS tables.
+
+[0m[32m[2024-10-12 09:15:17] INFO 
+
+[0m[32m[2024-10-12 09:15:17] INFO The reset process does not clean your kubeconfig files and you must remove them manually.
+
+[0m[32m[2024-10-12 09:15:17] INFO Please, check the contents of the $HOME/.kube/config file.
+
+[0m[32m[2024-10-12 09:15:17] INFO 09:15:20 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:17] INFO 09:15:20 CST [ClearOSModule] Reset os network config
+
+[0m[32m[2024-10-12 09:15:18] INFO 09:15:21 CST stdout: [node1]
+
+[0m[32m[2024-10-12 09:15:18] INFO Cannot find device "kube-ipvs0"
+
+[0m[32m[2024-10-12 09:15:19] INFO 09:15:22 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:19] INFO 09:15:22 CST [ClearOSModule] Uninstall etcd
+
+[0m[32m[2024-10-12 09:15:20] INFO 09:15:22 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:20] INFO 09:15:22 CST [ClearOSModule] Remove cluster files
+
+[0m[32m[2024-10-12 09:15:24] INFO 09:15:26 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:24] INFO 09:15:26 CST [ClearOSModule] Systemd daemon reload
+
+[0m[32m[2024-10-12 09:15:24] INFO 09:15:27 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:24] INFO 09:15:27 CST [UninstallAutoRenewCertsModule] UnInstall auto renew control-plane certs
+
+[0m[32m[2024-10-12 09:15:26] INFO 09:15:29 CST success: [node1]
+
+[0m[32m[2024-10-12 09:15:26] INFO 09:15:29 CST Pipeline[DeleteClusterPipeline] execute successfully
+
+[0m[32m[2024-10-12 09:15:30] INFO Pipeline Done
+
+[0m[32m[2024-10-12 09:15:35] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 1m15.7397754s | IP: 127.0.0.1
+
+[0m[32m[2024-10-12 09:15:35] INFO {{0 2024-10-12 09:14:19.3263311 +0800 CST m=+3.549862601 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728695735 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

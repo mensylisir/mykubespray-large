@@ -1,0 +1,36 @@
+[31m[2024-08-28 11:22:45] ERROR Failed to execute command: Process exited with status 5,   Can't initialize physical volume "/dev/sdb" of volume group "uos" without -ff
+  /dev/sdb: physical volume not initialized.
+
+[0m[31m[2024-08-28 11:22:46] ERROR pvcreate failed: Process exited with status 5
+[0m[31m[2024-08-28 11:22:56] ERROR Failed to create pv: Process exited with status 5
+[0m[31m[2024-08-28 11:23:06] ERROR Mount disk failed: Process exited with status 5
+[0m[32m[2024-08-28 11:28:53] INFO [Recovery] 2024/08/28 - 11:28:53 panic recovered:
+Process exited with status 5
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/errorx/errorx.go:40 (0x1fd5d69)
+	Dangerous: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/toolkits/pkg@v1.3.7/ginx/errorx.go:10 (0x1ff9130)
+	Dangerous: }
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/controller/os.go:38 (0x202d8cd)
+	MountDisk: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1fb69b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/logrus.go:62 (0x2013465)
+	Logrus.func1: //结束时间
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1fb69b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/workspace/previous/work/work/workspace/mykubespray/pkg/aop/recovery.go:94 (0x20116b8)
+	CustomRecoveryWithWriter.func1: }
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174 (0x1fb69b9)
+	(*Context).Next: c.index++
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1fc6689)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1fc615b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x1561a76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1530094)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x103ebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

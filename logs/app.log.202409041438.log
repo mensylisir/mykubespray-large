@@ -1,0 +1,69 @@
+[31m[2024-09-04 14:38:18] ERROR Faile to install or update chart release: cannot re-use a name that is still in use
+[0m[31m[2024-09-04 14:38:18] ERROR Error Install helm charts to kubernetes: cannot re-use a name that is still in use
+[0m[32m[2024-09-04 14:38:18] INFO [Recovery] 2024/09/04 - 14:38:18 panic recovered:
+cannot re-use a name that is still in use
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xa61b84)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xa616d1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x742e2d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x72234f)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x428d60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-04 14:38:51] ERROR Faile to install or update chart release: Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+[0m[31m[2024-09-04 14:38:51] ERROR Error Install helm charts to kubernetes: Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+[0m[32m[2024-09-04 14:38:51] INFO [Recovery] 2024/09/04 - 14:38:51 panic recovered:
+Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xa61b84)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xa616d1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x742e2d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x72234f)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x428d60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-04 14:39:42] ERROR Faile to install or update chart release: Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+[0m[31m[2024-09-04 14:39:42] ERROR Error Install helm charts to kubernetes: Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+[0m[32m[2024-09-04 14:39:42] INFO [Recovery] 2024/09/04 - 14:39:42 panic recovered:
+Unable to continue with install: CustomResourceDefinition "applications.argoproj.io" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; annotation validation error: key "meta.helm.sh/release-name" must equal "argo": current value is "bbb"; annotation validation error: key "meta.helm.sh/release-namespace" must equal "argocd-system": current value is "aaa"
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xa61b84)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xa616d1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x742e2d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x72234f)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x428d60)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-04 14:40:49] INFO creating 1 resource(s)
+[0m[32m[2024-09-04 14:40:49] INFO creating 41 resource(s)
+[0m[32m[2024-09-04 14:40:50] INFO release installed successfully: longhorn/longhorn-1.6.2
+[0m[32m[2024-09-04 14:40:50] INFO {{0 2024-09-04 14:40:48.3495138 +0800 CST m=+156.343671501 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725432050 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:40:50] INFO 
+[0m[32m[2024-09-04 14:43:04] INFO {{0 2024-09-04 14:43:04.3744497 +0800 CST m=+292.368607401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725432184 /api/v1/kubernetes/apply /api/v1/kubernetes/apply example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:43:04] INFO 
+[0m[32m[2024-09-04 16:06:45] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-09-04 16:06:45] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-09-04 16:06:46] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-09-04 16:06:46] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-09-04 16:06:46] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-09-04 16:06:46] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-09-04 16:06:46] INFO {{0 2024-09-04 16:06:45.6530801 +0800 CST m=+5313.647237801 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725437206 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 16:06:46] INFO 
+[0m[32m[2024-09-04 17:06:49] INFO {{0 2024-09-04 17:06:48.4637504 +0800 CST m=+8916.457908101 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725440809 /api/v1/apiserver/configure /api/v1/apiserver/configure example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 17:06:49] INFO 
+[0m

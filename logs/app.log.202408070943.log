@@ -1,0 +1,10 @@
+[31m[2024-08-07 09:44:37] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-08-07 09:44:37] INFO 
+[0m[31m[2024-08-07 09:45:06] ERROR bash: -c: line 1: syntax error near unexpected token `('
+
+[0m[31m[2024-08-07 09:45:06] ERROR bash: -c: line 1: `kk create cluster -f //\home\wangzhendong\cluster1/wangcluster/config-sample.yaml%!(EXTRA string=wangcluster) -a /home/wangzhendong/cluster1/kubesphere2.tar.gz --with-packages --yes'
+
+[0m[32m[2024-08-07 09:45:06] INFO Pipeline Done
+
+[0m[32m[2024-08-07 09:45:06] INFO 
+[0m

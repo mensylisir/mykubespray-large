@@ -1,0 +1,7 @@
+[31m[2024-10-11 15:24:00] ERROR Remote output: [sudo] password for wangzhendong: Sorry, try again.
+[0m[31m[2024-10-11 15:24:00] ERROR Failed to execute command: Process exited with status 1
+[0m[31m[2024-10-11 15:29:34] ERROR Remote output: [sudo] password for wangzhendong: 
+[0m[31m[2024-10-11 15:29:34] ERROR Failed to generate dir /home/wangzhendong/taichu/wangcluster: Process exited with status 1
+[0m[31m[2024-10-11 15:29:34] ERROR Remote output: sudo: no password was provided
+[0m[31m[2024-10-11 15:29:34] ERROR Remote output: sudo: 1 incorrect password attempt
+[0m

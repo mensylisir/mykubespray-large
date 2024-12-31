@@ -1,0 +1,37 @@
+[32m[2024-09-04 14:32:41] INFO preparing upgrade for bbb
+[0m[32m[2024-09-04 14:32:44] INFO performing update for bbb
+[0m[32m[2024-09-04 14:32:46] INFO creating upgraded release for bbb
+[0m[32m[2024-09-04 14:32:46] INFO checking 50 resources for changes
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "argocd-application-controller"
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "argocd-applicationset-controller"
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "argocd-notifications-controller"
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "bbb-argocd-repo-server"
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "argocd-server"
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for ServiceAccount "argocd-dex-server"
+[0m[32m[2024-09-04 14:32:46] INFO Patch Secret "argocd-notifications-secret" in namespace aaa
+[0m[32m[2024-09-04 14:32:46] INFO Looks like there are no changes for Secret "argocd-secret"
+[0m[32m[2024-09-04 14:32:46] INFO warning: Upgrade "bbb" failed: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:32:47] INFO release upgrade failed: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:32:47] ERROR Faile to install or update chart release: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:32:47] ERROR Error Install helm charts to kubernetes: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:32:47] INFO {{0 2024-09-04 14:32:41.0317358 +0800 CST m=+4.396532101 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431567 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:32:47] INFO 
+[0m[32m[2024-09-04 14:33:30] INFO preparing upgrade for bbb
+[0m[32m[2024-09-04 14:33:32] INFO performing update for bbb
+[0m[32m[2024-09-04 14:33:34] INFO creating upgraded release for bbb
+[0m[32m[2024-09-04 14:33:34] INFO checking 50 resources for changes
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "argocd-application-controller"
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "argocd-applicationset-controller"
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "argocd-notifications-controller"
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "bbb-argocd-repo-server"
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "argocd-server"
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for ServiceAccount "argocd-dex-server"
+[0m[32m[2024-09-04 14:33:34] INFO Patch Secret "argocd-notifications-secret" in namespace aaa
+[0m[32m[2024-09-04 14:33:34] INFO Looks like there are no changes for Secret "argocd-secret"
+[0m[32m[2024-09-04 14:33:34] INFO warning: Upgrade "bbb" failed: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:33:35] INFO release upgrade failed: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:33:35] ERROR Faile to install or update chart release: failed to create resource: namespaces "argocd-system" not found
+[0m[31m[2024-09-04 14:33:35] ERROR Error Install helm charts to kubernetes: failed to create resource: namespaces "argocd-system" not found
+[0m[32m[2024-09-04 14:33:35] INFO {{0 2024-09-04 14:33:30.137063 +0800 CST m=+53.501859301 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725431615 /api/v1/kubernetes/helm/chart /api/v1/kubernetes/helm/chart example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 14:33:35] INFO 
+[0m

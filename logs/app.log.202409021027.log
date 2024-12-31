@@ -1,0 +1,27 @@
+[32m[2024-09-02 10:28:01] INFO Updated registry.dev.rdev.tech to IP 172.30.1.17
+
+[0m[32m[2024-09-02 10:28:01] INFO 
+[0m[32m[2024-09-02 10:28:09] INFO Updated registry.dev.rdev.tech to IP 172.30.1.17
+
+[0m[32m[2024-09-02 10:28:09] INFO 
+[0m[32m[2024-09-02 10:28:20] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-09-02 10:28:20] INFO 
+[0m[31m[2024-09-02 10:30:52] ERROR Failed to open source file: open /home/wangzhendong/keycloak.crt: The system cannot find the path specified.
+[0m[31m[2024-09-02 10:30:52] ERROR copy cert failed: open /home/wangzhendong/keycloak.crt: The system cannot find the path specified.
+[0m[32m[2024-09-02 10:30:52] INFO [Recovery] 2024/09/02 - 10:30:52 panic recovered:
+open /home/wangzhendong/keycloak.crt: The system cannot find the path specified.
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x13f4364)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x13f3eb1)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0xd6e20d)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0xd4daef)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xa86e80)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-02 10:33:05] INFO Copy file
+[0m[32m[2024-09-02 10:33:05] INFO 
+[0m

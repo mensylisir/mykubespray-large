@@ -1,0 +1,118 @@
+[32m[2024-10-10 09:56:50] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 09:56:50] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-10 09:56:50] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 09:56:50] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-10 09:56:50] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 09:56:50] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-10 09:56:50] INFO Updated registry.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 09:56:50] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-10 09:56:50] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 602.3311ms | IP: ::1
+
+[0m[32m[2024-10-10 09:56:50] INFO {{0 2024-10-10 09:56:50.1176664 +0800 CST m=+3.448942901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728525410 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 09:57:43] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:57:43] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-10 09:57:43] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:57:43] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-10 09:57:43] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:57:43] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-10 09:57:43] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:57:43] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-10 09:57:43] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 417.1502ms | IP: ::1
+
+[0m[32m[2024-10-10 09:57:43] INFO {{0 2024-10-10 09:57:43.4479265 +0800 CST m=+56.779203001 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728525463 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 09:58:33] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:58:33] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-10 09:58:33] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:58:33] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-10 09:58:33] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:58:33] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-10 09:58:33] INFO Updated aaa.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 09:58:33] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-10 09:58:33] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 475.8789ms | IP: ::1
+
+[0m[32m[2024-10-10 09:58:33] INFO {{0 2024-10-10 09:58:32.9954768 +0800 CST m=+106.326753301 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728525513 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 10:00:11] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 10:00:11] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-10 10:00:11] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 10:00:11] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-10 10:00:11] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 10:00:11] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-10 10:00:11] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.14
+
+[0m[32m[2024-10-10 10:00:11] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-10 10:00:11] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 384.9244ms | IP: ::1
+
+[0m[32m[2024-10-10 10:00:11] INFO {{0 2024-10-10 10:00:10.9854716 +0800 CST m=+204.316748101 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728525611 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 10:00:29] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 10:00:29] INFO Successfully add hosts to 192.168.227.160
+
+[0m[32m[2024-10-10 10:00:29] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 10:00:29] INFO Successfully add hosts to 192.168.227.162
+
+[0m[32m[2024-10-10 10:00:29] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 10:00:29] INFO Successfully add hosts to 192.168.227.161
+
+[0m[32m[2024-10-10 10:00:29] INFO Updated bbb.dev.rdev.tech to IP 172.30.1.13
+
+[0m[32m[2024-10-10 10:00:29] INFO Successfully add hosts to 192.168.227.163
+
+[0m[32m[2024-10-10 10:00:29] INFO Method: POST | Path: /api/v1/server/hostsparallel | Status: 200 | Duration: 388.311ms | IP: ::1
+
+[0m[32m[2024-10-10 10:00:29] INFO {{0 2024-10-10 10:00:29.1693627 +0800 CST m=+222.500639201 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728525629 /api/v1/server/hostsparallel /api/v1/server/hostsparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 13:41:59] INFO Successfully copied file to 192.168.227.160
+
+[0m[32m[2024-10-10 13:41:59] INFO Successfully copied file to 192.168.227.161
+
+[0m[32m[2024-10-10 13:41:59] INFO Successfully copied file to 192.168.227.162
+
+[0m[32m[2024-10-10 13:41:59] INFO Successfully copied file to 192.168.227.163
+
+[0m[32m[2024-10-10 13:41:59] INFO Method: POST | Path: /api/v1/server/cert/copyparallel | Status: 200 | Duration: 290.0642ms | IP: ::1
+
+[0m[32m[2024-10-10 13:41:59] INFO {{0 2024-10-10 13:41:59.6292134 +0800 CST m=+13512.960489901 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728538919 /api/v1/server/cert/copyparallel /api/v1/server/cert/copyparallel example_module POST No description available for this endpoint.}
+[0m[32m[2024-10-10 13:43:11] INFO Successfully copied file to 192.168.227.160
+
+[0m[32m[2024-10-10 13:43:11] INFO Successfully copied file to 192.168.227.162
+
+[0m[32m[2024-10-10 13:43:11] INFO Successfully copied file to 192.168.227.161
+
+[0m[32m[2024-10-10 13:43:11] INFO Successfully copied file to 192.168.227.163
+
+[0m[32m[2024-10-10 13:43:11] INFO Method: POST | Path: /api/v1/server/cert/copyparallel | Status: 200 | Duration: 276.0075ms | IP: ::1
+
+[0m[32m[2024-10-10 13:43:11] INFO {{0 2024-10-10 13:43:10.8557749 +0800 CST m=+13584.187051401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728538991 /api/v1/server/cert/copyparallel /api/v1/server/cert/copyparallel example_module POST No description available for this endpoint.}
+[0m

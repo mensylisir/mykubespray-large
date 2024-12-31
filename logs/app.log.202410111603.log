@@ -1,0 +1,21 @@
+[31m[2024-10-11 16:03:21] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:21] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:23] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:23] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:24] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:24] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:25] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:25] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:26] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:26] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:27] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:27] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:28] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:28] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:03:43] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:03:43] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:04:25] ERROR Failed to create SSH session: ssh: rejected: connect failed (open failed)
+[0m[33m[2024-10-11 16:04:25] WARNING Read username failed: ssh: rejected: connect failed (open failed)
+[0m[31m[2024-10-11 16:04:54] ERROR Failed to execute command: Process exited with status 1
+[0m[31m[2024-10-11 16:16:21] ERROR Failed to generate kubekey config: Process exited with status 1
+[0m

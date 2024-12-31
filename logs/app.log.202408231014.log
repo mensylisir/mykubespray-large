@@ -1,0 +1,15 @@
+[31m[2024-08-23 10:14:27] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:27] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:27] ERROR Attempt 1: Error performing operation for user user2: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:27] ERROR Attempt 1: Error performing operation for user user1: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:32] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:32] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:32] ERROR Attempt 2: Error performing operation for user user2: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:32] ERROR Attempt 2: Error performing operation for user user1: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:37] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:37] ERROR Attempt 3: Error performing operation for user user1: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:37] ERROR failed to create user: 409
+[0m[31m[2024-08-23 10:14:37] ERROR Attempt 3: Error performing operation for user user2: failed to create user: 409 Conflict
+[0m[31m[2024-08-23 10:14:39] ERROR Failed to perform operation for user user1 after 3 attempts
+[0m[31m[2024-08-23 10:14:39] ERROR Failed to perform operation for user user2 after 3 attempts
+[0m

@@ -1,0 +1,3 @@
+[31m[2024-08-06 17:03:05] ERROR Failed to create SSH connection: ssh: handshake failed: ssh: unable to authenticate, attempted methods [none password], no supported methods remain
+[0m[32m[2024-08-06 17:03:05] INFO 
+[0m

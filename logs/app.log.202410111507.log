@@ -1,0 +1,4 @@
+[31m[2024-10-11 15:07:18] ERROR Remote output: sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+[0m[31m[2024-10-11 15:07:18] ERROR Failed to execute command: Process exited with status 1
+[0m[31m[2024-10-11 15:07:35] ERROR Failed to generate dir /home/wangzhendong/taichu/wangcluster: Process exited with status 1
+[0m

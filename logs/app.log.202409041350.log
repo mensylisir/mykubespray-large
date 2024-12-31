@@ -1,0 +1,5 @@
+[32m[2024-09-04 13:51:01] INFO {{0 2024-09-04 13:51:01.5939586 +0800 CST m=+5.833877401 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725429061 /api/v1/kubernetes/apply /api/v1/kubernetes/apply example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 13:51:01] INFO 
+[0m[32m[2024-09-04 13:52:43] INFO {{0 2024-09-04 13:52:43.3430723 +0800 CST m=+107.582991101 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1725429163 /api/v1/kubernetes/apply /api/v1/kubernetes/apply example_module POST No description available for this endpoint.}
+[0m[32m[2024-09-04 13:52:43] INFO 
+[0m

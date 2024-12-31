@@ -1,0 +1,31 @@
+[31m[2024-09-05 16:30:27] ERROR failed to get user: 401
+[0m[31m[2024-09-05 16:30:36] ERROR Query User failed: failed to get user: 401 Unauthorized
+[0m[32m[2024-09-05 16:30:36] INFO [Recovery] 2024/09/05 - 16:30:36 panic recovered:
+failed to get user: 401 Unauthorized
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc5ee29)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc5e8fb)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x798d76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x767054)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x220da0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-05 16:31:04] ERROR failed to get user: 401
+[0m[31m[2024-09-05 16:31:04] ERROR Query User failed: failed to get user: 401 Unauthorized
+[0m[32m[2024-09-05 16:31:04] INFO [Recovery] 2024/09/05 - 16:31:04 panic recovered:
+failed to get user: 401 Unauthorized
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0xc5ee29)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0xc5e8fb)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x798d76)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x767054)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0x220da0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m

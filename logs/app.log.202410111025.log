@@ -1,0 +1,21 @@
+[31m[2024-10-11 10:26:07] ERROR Failed to generate dir \home\wangzhendong\cluster1\wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 10:26:07] INFO error: Unable to open the given cluster configuration file: open /home/wangzhendong/homewangzhendongcluster1wangclusterconfig-sample.yaml: no such file or directory
+
+[0m[31m[2024-10-11 10:26:07] ERROR SSH command execution failed: Process exited with status 1
+[0m[31m[2024-10-11 10:26:07] ERROR Failed to delete cluster wangcluster: Process exited with status 1
+[0m[31m[2024-10-11 10:26:07] ERROR Pipeline Done
+
+[0m[32m[2024-10-11 10:26:07] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 5.2763887s | IP: 127.0.0.1
+
+[0m[32m[2024-10-11 10:26:07] INFO {{0 2024-10-11 10:26:02.3062755 +0800 CST m=+3.077172301 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728613567 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m[31m[2024-10-11 10:27:18] ERROR Failed to generate dir \home\wangzhendong\taichu\wangcluster: Process exited with status 1
+[0m[32m[2024-10-11 10:27:18] INFO error: Unable to open the given cluster configuration file: open /home/wangzhendong/homewangzhendongtaichuwangclusterconfig-sample.yaml: no such file or directory
+
+[0m[31m[2024-10-11 10:27:18] ERROR SSH command execution failed: Process exited with status 1
+[0m[31m[2024-10-11 10:27:18] ERROR Failed to delete cluster wangcluster: Process exited with status 1
+[0m[31m[2024-10-11 10:27:18] ERROR Pipeline Done
+
+[0m[32m[2024-10-11 10:27:18] INFO Method: GET | Path: /api/ws/v1/cluster/delete | Status: 200 | Duration: 5.2907865s | IP: 127.0.0.1
+
+[0m[32m[2024-10-11 10:27:18] INFO {{0 2024-10-11 10:27:13.5230354 +0800 CST m=+74.293932201 0001-01-01 00:00:00 +0000 UTC {0001-01-01 00:00:00 +0000 UTC false}} example_user 1728613638 /api/ws/v1/cluster/delete /api/ws/v1/cluster/delete example_module GET No description available for this endpoint.}
+[0m

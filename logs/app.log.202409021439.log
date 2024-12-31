@@ -1,0 +1,94 @@
+[31m[2024-09-02 14:39:55] ERROR Failed to open source file: open : The system cannot find the file specified.
+[0m[31m[2024-09-02 14:39:55] ERROR Failed to copy file to 192.168.227.160: Failed to copy file to 192.168.227.160: open : The system cannot find the file specified.
+
+[0m[31m[2024-09-02 14:39:55] ERROR Failed to open source file: open : The system cannot find the file specified.
+[0m[31m[2024-09-02 14:39:55] ERROR Failed to copy file to 192.168.227.161: Failed to copy file to 192.168.227.161: open : The system cannot find the file specified.
+
+[0m[31m[2024-09-02 14:39:55] ERROR Failed to open source file: open : The system cannot find the file specified.
+[0m[31m[2024-09-02 14:39:55] ERROR Failed to copy file to 192.168.227.162: Failed to copy file to 192.168.227.162: open : The system cannot find the file specified.
+
+[0m[31m[2024-09-02 14:39:55] ERROR Copy keycloak certificate failed: add keycloak cert failed
+[0m[32m[2024-09-02 14:39:55] INFO [Recovery] 2024/09/02 - 14:39:55 panic recovered:
+add keycloak cert failed
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1e33e69)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1e3393b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x13c4756)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1392d74)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe9ebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-02 14:40:25] INFO Successfully copied file to 192.168.227.160
+
+[0m[31m[2024-09-02 14:40:25] ERROR Failed to create destination file: file does not exist
+[0m[31m[2024-09-02 14:40:25] ERROR Failed to copy file to 192.168.227.162: Failed to copy file to 192.168.227.162: file does not exist
+
+[0m[32m[2024-09-02 14:40:25] INFO Successfully copied file to 192.168.227.161
+
+[0m[31m[2024-09-02 14:40:25] ERROR Copy keycloak certificate failed: add keycloak cert failed
+[0m[32m[2024-09-02 14:40:25] INFO [Recovery] 2024/09/02 - 14:40:25 panic recovered:
+add keycloak cert failed
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1e33e69)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1e3393b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x13c4756)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1392d74)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe9ebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[31m[2024-09-02 14:41:01] ERROR Failed to create destination file: file does not exist
+[0m[31m[2024-09-02 14:43:24] ERROR Failed to copy file to 192.168.227.162: Failed to copy file to 192.168.227.162: file does not exist
+
+[0m[32m[2024-09-02 14:43:25] INFO Successfully copied file to 192.168.227.160
+
+[0m[32m[2024-09-02 14:43:25] INFO Successfully copied file to 192.168.227.161
+
+[0m[31m[2024-09-02 14:43:25] ERROR Copy keycloak certificate failed: add keycloak cert failed
+[0m[32m[2024-09-02 14:43:25] INFO [Recovery] 2024/09/02 - 14:43:25 panic recovered:
+add keycloak cert failed
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 (0x1e33e69)
+	(*Engine).handleHTTPRequest: c.writermem.WriteHeaderNow()
+C:/Users/Administrator/gomod/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 (0x1e3393b)
+	(*Engine).ServeHTTP: 
+C:/Program Files/Go/src/net/http/server.go:3210 (0x13c4756)
+	serverHandler.ServeHTTP: }
+C:/Program Files/Go/src/net/http/server.go:2092 (0x1392d74)
+	(*conn).serve: inFlightResponse = nil
+C:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xe9ebe0)
+	goexit: CALL	runtime·goexit1(SB)	// does not return
+[0m
+[0m[32m[2024-09-02 14:43:25] INFO Successfully copied file to 192.168.227.161
+
+[0m[32m[2024-09-02 14:43:26] INFO Successfully copied file to 192.168.227.160
+
+[0m[32m[2024-09-02 14:43:26] INFO Successfully copied file to 192.168.227.162
+
+[0m[32m[2024-09-02 14:43:26] INFO 
+[0m[32m[2024-09-02 14:43:39] INFO Successfully to execute command on 192.168.227.161
+
+[0m[32m[2024-09-02 14:43:39] INFO Successfully to execute command on 192.168.227.160
+
+[0m[32m[2024-09-02 14:43:39] INFO Successfully to execute command on 192.168.227.162
+
+[0m[32m[2024-09-02 14:43:39] INFO 
+[0m[32m[2024-09-02 14:43:46] INFO Successfully to execute command on 192.168.227.161
+
+[0m[32m[2024-09-02 14:43:46] INFO Successfully to execute command on 192.168.227.162
+
+[0m[32m[2024-09-02 14:43:46] INFO Successfully to execute command on 192.168.227.160
+
+[0m[32m[2024-09-02 14:43:46] INFO 
+[0m[32m[2024-09-02 14:44:25] INFO Successfully to execute command on 192.168.227.162
+
+[0m[32m[2024-09-02 14:44:25] INFO Successfully to execute command on 192.168.227.161
+
+[0m[32m[2024-09-02 14:44:25] INFO Successfully to execute command on 192.168.227.160
+
+[0m[32m[2024-09-02 14:44:25] INFO 
+[0m
