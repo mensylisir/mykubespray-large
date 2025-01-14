@@ -1,0 +1,6 @@
+[Unit]
+Description=My Task Service
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/your/command

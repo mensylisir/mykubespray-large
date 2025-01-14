@@ -1,0 +1,116 @@
+#!/usr/bin/expect
+
+# 设置超时时间
+set timeout 30
+
+# 私钥路径
+set private_key "/var/tmp/ssh_config/localhuoyun"
+
+# 读取 host.info 中的 IP 列表，按行循环处理
+set host_file "host.info"
+
+# 打开文件
+set file [open $host_file r]
+
+# 循环处理每个 IP
+while { [gets $file ip] != -1 } {
+    # 跳过空行
+    if { [string trim $ip] == "" } {
+        continue
+    }
+
+    # 输出当前处理的 IP
+    puts "Processing host: $ip"
+
+    # 启动 SSH 会话
+    spawn ssh -i $private_key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null "root@$ip"
+
+    # 处理密码输入，如果需要
+    expect {
+        "password:" {
+            send "$password\r"
+        }
+        timeout {
+            puts "Error: Timeout waiting for SSH prompt on $ip"
+            continue
+        }
+    }
+
+    # 等待远程 shell 提示符
+    expect "$ "
+
+    # 执行 fdisk 操作
+    spawn fdisk /dev/sda
+
+    # 发送 fdisk 操作的交互命令
+    expect "Command (m for help):" {
+        send "n\r"  # 创建新分区
+    }
+
+    # 选择分区类型（默认主分区）
+    expect "Select (default p):" {
+        send "\r"  # 使用默认值
+    }
+
+    # 选择分区号（默认选择 1）
+    expect "Partition number (1-4, default 1):" {
+        send "\r"  # 使用默认值
+    }
+
+    # 选择起始扇区（使用默认值）
+    expect "First sector (" {
+        send "\r"  # 使用默认值
+    }
+
+    # 选择结束扇区（使用剩余空间）
+    expect "Last sector," {
+        send "\r"  # 使用剩余空间
+    }
+
+    # 保存分区表并退出 fdisk
+    expect "Command (m for help):" {
+        send "w\r"  # 保存并退出
+    }
+
+    # 等待 fdisk 完成
+    expect eof
+
+    # 输出分区完成消息
+    puts "Completed partitioning on $ip"
+
+    # 等待一些时间，确保系统识别新分区
+    sleep 5
+
+    # 执行 pvcreate 操作
+    spawn pvcreate /dev/sda4
+    expect "Physical volume" {
+        send "\r"  # 确保成功创建物理卷
+    }
+
+    # 执行 vgextend 操作
+    spawn vgextend uos /dev/sda4
+    expect "Volume group" {
+        send "\r"  # 确保成功扩展卷组
+    }
+
+    # 执行 lvextend 操作
+    spawn lvextend -l +100%FREE /dev/mapper/uos-var
+    expect "Logical volume" {
+        send "\r"  # 确保成功扩展逻辑卷
+    }
+
+    # 执行 xfs_growfs 操作
+    spawn xfs_growfs /dev/mapper/uos-var
+    expect "xfs_growfs" {
+        send "\r"  # 确保成功扩展文件系统
+    }
+
+    # 等待命令完成
+    expect eof
+
+    # 输出完成消息
+    puts "Completed LVM and filesystem operations on $ip"
+}
+
+# 关闭文件
+close $file
