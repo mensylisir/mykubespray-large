@@ -1,6 +1,6 @@
 [Unit]
-Description=My Task Service
+Description=Backup Etcd Every Hour
 
 [Service]
 Type=oneshot
-ExecStart=/path/to/your/command
+ExecStart=/etc/systemd/system/backup-etcd.sh

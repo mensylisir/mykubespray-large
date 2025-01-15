@@ -2,9 +2,8 @@
 Description=Backup Etcd Every Hour
 
 [Timer]
-OnBootSec=10min
-OnUnitActiveSec=1h
-AccuracySec=1h
+OnCalendar=*-*-* 02:00:00
+Unit=backup-etcd.service
 
 [Install]
 WantedBy=timers.target
