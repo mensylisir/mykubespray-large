@@ -3,7 +3,8 @@
 # Get all manifest files.
 # Using find is generally safer than ls for scripting, especially with spaces or special characters.
 # However, given your specific filenames, ls -1 manifest-*.yaml is also fine.
-find . -maxdepth 1 -name 'manifest-*.yaml' -print0 | while IFS= read -r -d $'\0' filepath; do
+# find . -maxdepth 1 -name 'manifest-*.yaml' -print0 | while IFS= read -r -d $'\0' filepath; do
+find . -maxdepth 1 -name 'manifest-*.yaml' -print0 | sort -z | while IFS= read -r -d $'\0' filepath; do
   # Get just the filename from the path (e.g., remove "./")
   filename="${filepath##*/}"
   output_file=""
