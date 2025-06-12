@@ -1,141 +1,138 @@
+sudo apt install -y qemu-kvm libvirt-daemon-system bridge-utils virt-manager cloud-image-utils
+mkdir -p /var/lib/libvirt/images/templates
+cd /var/lib/libvirt/images/templates
+wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+qemu-img create -f qcow2 -o backing_fmt=qcow2 -b jammy-server-cloudimg-amd64.img ubuntu2204-base.qcow2 20G
+
 #!/bin/bash
+# --- create_vm_nat_static_ip.sh ---
 
-# --- 请根据你的环境修改以下变量 ---
+# --- 变量配置 ---
+# libvirt存储池和网络名称
+STORAGE_POOL_NAME="default" # 脚本会自动检测并使用活跃的池
+NETWORK_NAME="default"
 
-# 主机的网络接口 (用于桥接)
-# 使用 `ip a` 命令查看你的物理网卡名
-HOST_INTERFACE="enp0s25"
+# 模板卷的名称
+TEMPLATE_VOL_NAME="ubuntu2204-base.qcow2"
 
-# Ubuntu Server ISO 镜像的完整路径
-# !!! 关键：必须使用 Server 版本的 ISO，Desktop 版本不支持 autoinstall !!!
-ISO_PATH="$(pwd)/ubuntu-22.04.5-live-server-amd64.iso"
-
-# 你的网络网关
-NETWORK_GATEWAY="10.144.169.1"
-
-# 子网掩码 (CIDR格式)
-NETWORK_CIDR="24" # 24 代表 255.255.255.0
-
-# DNS 服务器 (用空格分隔)
-DNS_SERVERS="172.30.1.13 172.17.0.13"
-
-# 虚拟机的 root 密码
+# 虚拟机的root密码
 ROOT_PASSWORD="Def@u1tpwd"
 
 # 虚拟机通用资源配置
 CPUS=2
-MEM_MB=4096    # VirtualBox 使用 MB 作为单位
-DISK_MB=20480  # 20G
+MEM_MB=4096
 
-# --- 脚本主逻辑 ---
+# --- 准备工作：智能地检测和准备环境 ---
+# 1. 自动检测活跃的存储池
+DETECTED_POOL=$(virsh pool-list --all | grep -i 'active' | awk '{print $1}' | head -n 1)
+if [ -n "$DETECTED_POOL" ]; then
+    STORAGE_POOL_NAME=$DETECTED_POOL
+fi
+echo "成功找到并使用活跃存储池: '$STORAGE_POOL_NAME'"
+STORAGE_POOL_PATH=$(virsh pool-dumpxml "$STORAGE_POOL_NAME" | grep -oP '(?<=<path>).*(?=</path>)')
 
-# 检查 ISO 文件是否存在
-if [ ! -f "$ISO_PATH" ]; then
-    echo "错误: Ubuntu Server ISO 文件 '$ISO_PATH' 未找到!"
-    echo "请先下载: wget https://releases.ubuntu.com/jammy/ubuntu-22.04.5-live-server-amd64.iso"
+# 2. 检查模板是否存在
+if ! virsh vol-info --pool "$STORAGE_POOL_NAME" "$TEMPLATE_VOL_NAME" >/dev/null 2>&1; then
+    echo "错误: 模板卷 '$TEMPLATE_VOL_NAME' 在存储池 '$STORAGE_POOL_NAME' 中未找到!"
     exit 1
 fi
 
-echo "准备批量创建3台虚拟机 (vm1, vm2, vm3)..."
+# 3. 激活默认NAT网络
+if ! virsh net-info "$NETWORK_NAME" | grep -q 'Active: *yes'; then
+    echo "正在激活 '$NETWORK_NAME' 网络..."
+    virsh net-start "$NETWORK_NAME"
+    virsh net-autostart "$NETWORK_NAME"
+fi
 
-# 将空格分隔的DNS服务器列表转换为YAML格式的列表
-DNS_YAML_LIST=$(echo "$DNS_SERVERS" | awk '{for(i=1;i<=NF;i++) printf "          - %s\n", $i}')
+# --- 脚本主逻辑 ---
+echo "准备通过QEMU/KVM(NAT+静态IP)批量创建3台虚拟机..."
 
-# 循环创建3台虚拟机
 for i in {1..3}
 do
     VM_NAME="vm$i"
-    # IP地址从 10.144.169.2 开始
-    VM_IP="10.144.169.$((i+1))"
-    USER_DATA_FILE="user-data-for-$VM_NAME"
+    # 我们为每台VM预先定义好IP和MAC地址
+    VM_IP="192.168.122.10${i}" # vm1->.101, vm2->.102, ...
+    VM_MAC="52:54:00:00:01:$(printf '%02x' $i)" # 生成唯一的MAC地址
+    VM_VOL_NAME="${VM_NAME}.qcow2"
+    CLOUD_INIT_ISO="${STORAGE_POOL_PATH}/${VM_NAME}-cloud-init.iso"
 
     echo "-----------------------------------------------------"
     echo "正在创建虚拟机: $VM_NAME"
-    echo "IP 地址: $VM_IP"
-    echo "Root 密码: $ROOT_PASSWORD"
+    echo "  - 固定IP: $VM_IP"
+    echo "  - 固定MAC: $VM_MAC"
     echo "-----------------------------------------------------"
 
-    # 检查同名虚拟机是否已存在
-    if VBoxManage showvminfo "$VM_NAME" >/dev/null 2>&1; then
-        echo "虚拟机 $VM_NAME 已存在，正在删除..."
-        VBoxManage unregistervm "$VM_NAME" --delete
+    # 如果同名虚拟机已存在，则先销毁并删除
+    if virsh dominfo "$VM_NAME" >/dev/null 2>&1; then
+        echo "虚拟机 $VM_NAME 已存在，正在销毁并删除..."
+        virsh destroy "$VM_NAME" --graceful || virsh destroy "$VM_NAME"
+        virsh undefine "$VM_NAME" --remove-all-storage
     fi
+    rm -f "$CLOUD_INIT_ISO"
 
-    # 1. 生成 user-data 应答文件 (autoinstall 格式)
-    INITIAL_USER="tempuser"
-    cat > "$USER_DATA_FILE" <<EOF
-#cloud-config
-autoinstall:
-  version: 1
-  identity:
-    hostname: $VM_NAME
-    username: $INITIAL_USER
-    password: "temporarypassword"
-  network:
-    version: 2
-    ethernets:
-      enp0s3: # VirtualBox虚拟机的第一个网卡通常是enp0s3
-        dhcp4: no
-        addresses:
-          - $VM_IP/$NETWORK_CIDR
-        gateway4: $NETWORK_GATEWAY
-        nameservers:
-          addresses:
-$(echo -e "$DNS_YAML_LIST")
-  ssh:
-    install-server: yes
-    allow-pw: yes
-  refresh-installer:
-    update: no
-EOF
+    # 步骤 1: 在libvirt网络中添加/更新DHCP静态租约
+    echo "步骤 1: 为 $VM_MAC -> $VM_IP 添加DHCP静态租约..."
+    virsh net-update "$NETWORK_NAME" add ip-dhcp-host \
+      "<host mac='$VM_MAC' name='$VM_NAME' ip='$VM_IP' />" \
+      --live --config
 
-    # 2. 定义安装后立即执行的命令
-    POST_INSTALL_COMMAND="echo 'root:$ROOT_PASSWORD' | sudo chpasswd && sudo sed -i 's/^#?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd"
-
-    # 3. 使用 VBoxManage unattended install 创建并开始安装
-    # !!! 关键：将 --user-data 修改为 --script-template，以兼容 VirtualBox 6.1 !!!
-    VBoxManage unattended install "$VM_NAME" \
-      --iso="$ISO_PATH" \
-      --script-template="$USER_DATA_FILE" \
-      --install-additions \
-      --hostname="$VM_NAME" \
-      --user="$INITIAL_USER" \
-      --password="temporarypassword" \
-      --full-user-name="$INITIAL_USER" \
-      --time-zone="auto" \
-      --post-install-command="$POST_INSTALL_COMMAND"
-
-    # 检查命令是否成功
     if [ $? -ne 0 ]; then
-        echo "为虚拟机 $VM_NAME 启动无人值守安装失败! 中止脚本。"
-        rm -f "$USER_DATA_FILE"
+        echo "添加DHCP租约失败! 请检查libvirt网络配置。中止脚本。"
         exit 1
     fi
 
-    # 4. 修改虚拟机的硬件配置
-    echo "正在为 $VM_NAME 配置硬件..."
-    VBoxManage modifyvm "$VM_NAME" \
-      --cpus "$CPUS" \
-      --memory "$MEM_MB" \
-      --nic1 bridged --bridgeadapter1 "$HOST_INTERFACE"
+    # 步骤 2: 克隆磁盘卷并调整大小
+    echo "步骤 2: 使用 virsh 克隆并调整磁盘卷..."
+    virsh vol-clone --pool "$STORAGE_POOL_NAME" "$TEMPLATE_VOL_NAME" "$VM_VOL_NAME"
+    virsh vol-resize --pool "$STORAGE_POOL_NAME" "$VM_VOL_NAME" 20G
 
-    # 5. 修改虚拟磁盘大小
-    VDI_FILE=$(VBoxManage showvminfo "$VM_NAME" --machinereadable | grep "SATA-0-0" | cut -d'"' -f2)
-    if [ -n "$VDI_FILE" ]; then
-        echo "正在调整磁盘大小至 ${DISK_MB}MB..."
-        VBoxManage modifymedium disk "$VDI_FILE" --resize "$DISK_MB"
+    # 步骤 3: 生成 cloud-init 配置文件 (不再需要网络配置)
+    USER_DATA=$(cat <<EOF
+#cloud-config
+# 网络配置由libvirt的DHCP静态租约管理，这里留空
+hostname: $VM_NAME
+manage_etc_hosts: true
+chpasswd:
+  list: |
+    root:$ROOT_PASSWORD
+  expire: False
+ssh_pwauth: True
+runcmd:
+  - [ sed, -i, 's/^#?PermitRootLogin.*/PermitRootLogin yes/', /etc/ssh/sshd_config ]
+  - [ systemctl, restart, sshd ]
+EOF
+)
+    META_DATA="instance-id: ${VM_NAME}-$(uuidgen)\nlocal-hostname: ${VM_NAME}"
+
+    # 步骤 4: 创建配置盘
+    echo "步骤 3: 创建Cloud-Init配置盘..."
+    cloud-localds "$CLOUD_INIT_ISO" <(echo "$USER_DATA") <(echo "$META_DATA")
+
+    # 步骤 5: 使用 virt-install 定义并启动虚拟机 (指定了MAC地址)
+    echo "步骤 4: 使用virt-install定义并启动虚拟机..."
+    virt-install --name "$VM_NAME" \
+      --virt-type kvm \
+      --memory "$MEM_MB" \
+      --vcpus "$CPUS" \
+      --os-variant ubuntu22.04 \
+      --disk vol="${STORAGE_POOL_NAME}/${VM_VOL_NAME}",device=disk,bus=virtio \
+      --disk path="$CLOUD_INIT_ISO",device=cdrom \
+      --network network="$NETWORK_NAME",mac="$VM_MAC",model=virtio \
+      --graphics none \
+      --noautoconsole \
+      --import
+
+    if [ $? -ne 0 ]; then
+        echo "创建虚拟机 $VM_NAME 失败! 中止脚本。"
+        exit 1
     fi
 
-    # 6. 启动虚拟机开始真正的安装过程
-    echo "启动虚拟机 $VM_NAME 开始后台安装..."
-    VBoxManage startvm "$VM_NAME" --type headless
-
-    rm -f "$USER_DATA_FILE"
-
-    echo "虚拟机 $VM_NAME 已启动并在后台进行无人值守安装。"
+    echo "虚拟机 $VM_NAME 已成功创建并启动，IP地址应为 $VM_IP 。"
 done
 
 echo "-----------------------------------------------------"
-echo "所有虚拟机创建命令已发出!"
-echo "你可以使用 'VBoxManage list runningvms' 查看正在运行的虚拟机。"
-echo "安装完成后，就可以通过 'ssh root@<ip_address>' 并使用密码 '$ROOT_PASSWORD' 连接了。"
+echo "所有虚拟机已创建并启动!"
+echo "等待约30-60秒让cloud-init完成配置后，即可通过固定IP SSH连接:"
+echo "  vm1: ssh root@192.168.122.101"
+echo "  vm2: ssh root@192.168.122.102"
+echo "  vm3: ssh root@192.168.122.103"
